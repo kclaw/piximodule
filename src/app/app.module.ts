@@ -3,11 +3,15 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { PixiApplicationComponent } from './pixi-application/pixi-application.component';
+import { PixiSpriteComponent } from './pixi-sprite/pixi-sprite.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PixiApplicationComponent,
+    PixiSpriteComponent
   ],
   imports: [
     BrowserModule

@@ -2,26 +2,44 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.7.
 
-## Development server
+# Project Goal
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This project, integrates Angular with PIXI module, provides 
+reusable component for other project and is designed with high  adaptability on variable viewport and high compatability with current HTMLElement.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Originally, PIXI module requires dimensions to intialise a canvas.
+By benefiting from Angular dynamic component, developer can have dynamic-dimensiional canvas without given dimensions.
 
-## Build
+developer can imagine a HTML block element which contains two layers. One layer supports original HTMLElemnt and another layer layouts PIXI Element.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+let we name a HTML block with two layers aforementioned PIXI block.
+Each PIXI block will be allocated with dimension by browser according to rules.
 
-## Running unit tests
+Child element(s) of PIXI block determines dimension of PIXI block.
+<code>
+    <pixi-block>
+        <child-element class="A"></child-element>
+        <child-element class="B"></child-element>
+    </pixi-block>
+</code> 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+According to styling of Child elements, for example,
 
-## Running end-to-end tests
+child-element {
+    display: block;
+}
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+.A {
+    width: 400px;
+    height: 700px;
+}
 
-## Further help
+.B {
+    width: 300px;
+    height: 800px;
+}
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+the browser will allocate dimension of PIXI block with width matching parent and 1500 height.
+
+In this mechanism, it is designed to initialise PIXI block element after child element initialisation although it is unknown of child element(s).
