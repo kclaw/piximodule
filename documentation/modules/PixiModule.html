@@ -1,0 +1,965 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>pixi-module documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	    <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">pixi-module documentation</a>
+            <button type="button" class="btn btn-default btn-menu fa fa-bars" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <div id="book-search-input" role="search">
+                <input type="text" placeholder="Type to search">
+            </div>
+            <nav>
+            
+                <ul class="list">
+            
+                    <li class="title">
+                        <a href="../index.html">pixi-module documentation</a>
+                    </li>
+            
+                    <li class="divider"></li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../index.html"><span class="fa fa-home"></span>Getting started</a>
+                        <ul class="links">
+                                <li class="link">
+                                    <a 
+                                        
+                                         href="../overview.html" 
+                                         href="../overview.html" 
+                                        >
+                                        <span class="fa fa-fw fa-th"></span>Overview
+                                    </a>
+                                </li>
+                                <li class="link">
+                                  <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../dependencies.html"
+                                        
+                                        >
+                                        <span class="fa fa-fw fa-list"></span>Dependencies
+                                    </a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../modules.html" >
+                            <div class="menu-toggler linked" data-toggle="collapse"
+                                    data-target="#xs-modules-links"
+                            >
+                                <span class="fa fa-fw fa-archive"></span>
+                                <span class="link-name">Modules</span>
+                                <span class="fa fa-angle-down"></span>
+                            </div>
+                        </a>
+                        <ul class="links collapse "
+                                id="xs-modules-links"
+                            >
+                                <li class="link">
+                                    <a href="../modules/AppModule.html" >AppModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/PixiModule.html"  data-type="entity-link" class="active" >PixiModule</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-components-links"
+                            >
+                            <span class="fa fa-fw fa-cogs"></span>
+                            <span>Components</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-components-links"
+                            >
+                                <li class="link">
+                                    <a href="../components/AppComponent.html" >AppComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/Example1Component.html" >Example1Component</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/Example2Component.html" >Example2Component</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/Example3Component.html" >Example3Component</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/Example4Component.html" >Example4Component</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/Example5Component.html" >Example5Component</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/Example6Component.html" >Example6Component</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/ExampleGraphicswrapperComponent.html" >ExampleGraphicswrapperComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/PixiApplicationComponent.html" >PixiApplicationComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/PixiContainerComponent.html" >PixiContainerComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/PixiGraphicsComponent.html" >PixiGraphicsComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/PixiGraphicsWrapperComponent.html" >PixiGraphicsWrapperComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/PixiInitializerComponent.html" >PixiInitializerComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/PixiLayerComponent.html" >PixiLayerComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/PixiSpriteComponent.html" >PixiSpriteComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/PixiTextComponent.html" >PixiTextComponent</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-directives-links"
+                            >
+                            <span class="fa fa-fw fa-code"></span>
+                            <span>Directives</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-directives-links"
+                            >
+                                <li class="link">
+                                    <a href="../directives/PixiGraphicswrapperDirective.html" >PixiGraphicswrapperDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/PixiInitializerDirective.html" >PixiInitializerDirective</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-classes-links"
+                            >
+                            <span class="fa fa-fw fa-file-code-o"></span>
+                            <span>Classes</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-classes-links"
+                            >
+                                <li class="link">
+                                    <a href="../classes/AppPage.html" >AppPage</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-interfaces-links"
+                            >
+                            <span class="fa fa-fw fa-info"></span>
+                            <span>Interfaces</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-interfaces-links"
+                            >
+                                <li class="link">
+                                    <a href="../interfaces/PixiGraphicsWrapper.html" >PixiGraphicsWrapper</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-miscellaneous-links"
+                            >
+                            <span class="fa fa-fw fa-cubes"></span>
+                            <span>Miscellaneous</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-miscellaneous-links"
+                            >
+                                <li class="link">
+                                  <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-fw fa-tasks"></span>Documentation coverage</a>
+                    </li>
+            
+                    <li class="divider"></li>
+                    <li class="copyright">
+                            Documentation generated using <a href="https://compodoc.github.io/website/" target="_blank">
+                                        <img src="../images/compodoc-vectorise.svg" class="img-responsive">
+                            </a>
+                    </li>
+            
+                </ul>
+            
+            </nav>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <nav>
+                   
+                       <ul class="list">
+                   
+                           <li class="title">
+                               <a href="../index.html">pixi-module documentation</a>
+                           </li>
+                   
+                           <li class="divider"></li>
+                   
+                               <div id="book-search-input" role="search">
+                                   <input type="text" placeholder="Type to search">
+                               </div>
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../index.html"><span class="fa fa-home"></span>Getting started</a>
+                               <ul class="links">
+                                       <li class="link">
+                                           <a 
+                                               
+                                                href="../overview.html" 
+                                                href="../overview.html" 
+                                               >
+                                               <span class="fa fa-fw fa-th"></span>Overview
+                                           </a>
+                                       </li>
+                                       <li class="link">
+                                         <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../dependencies.html"
+                                               
+                                               >
+                                               <span class="fa fa-fw fa-list"></span>Dependencies
+                                           </a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../modules.html" >
+                                   <div class="menu-toggler linked" data-toggle="collapse"
+                                           data-target="#modules-links"
+                                   >
+                                       <span class="fa fa-fw fa-archive"></span>
+                                       <span class="link-name">Modules</span>
+                                       <span class="fa fa-angle-down"></span>
+                                   </div>
+                               </a>
+                               <ul class="links collapse "
+                                       id="modules-links"
+                   >
+                                       <li class="link">
+                                           <a href="../modules/AppModule.html" >AppModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/PixiModule.html"  data-type="entity-link" class="active" >PixiModule</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#components-links"
+                   >
+                                   <span class="fa fa-fw fa-cogs"></span>
+                                   <span>Components</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="components-links"
+                   >
+                                       <li class="link">
+                                           <a href="../components/AppComponent.html" >AppComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/Example1Component.html" >Example1Component</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/Example2Component.html" >Example2Component</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/Example3Component.html" >Example3Component</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/Example4Component.html" >Example4Component</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/Example5Component.html" >Example5Component</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/Example6Component.html" >Example6Component</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/ExampleGraphicswrapperComponent.html" >ExampleGraphicswrapperComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/PixiApplicationComponent.html" >PixiApplicationComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/PixiContainerComponent.html" >PixiContainerComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/PixiGraphicsComponent.html" >PixiGraphicsComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/PixiGraphicsWrapperComponent.html" >PixiGraphicsWrapperComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/PixiInitializerComponent.html" >PixiInitializerComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/PixiLayerComponent.html" >PixiLayerComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/PixiSpriteComponent.html" >PixiSpriteComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/PixiTextComponent.html" >PixiTextComponent</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#directives-links"
+                   >
+                                   <span class="fa fa-fw fa-code"></span>
+                                   <span>Directives</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="directives-links"
+                   >
+                                       <li class="link">
+                                           <a href="../directives/PixiGraphicswrapperDirective.html" >PixiGraphicswrapperDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/PixiInitializerDirective.html" >PixiInitializerDirective</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#classes-links"
+                   >
+                                   <span class="fa fa-fw fa-file-code-o"></span>
+                                   <span>Classes</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="classes-links"
+                   >
+                                       <li class="link">
+                                           <a href="../classes/AppPage.html" >AppPage</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#interfaces-links"
+                   >
+                                   <span class="fa fa-fw fa-info"></span>
+                                   <span>Interfaces</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="interfaces-links"
+                   >
+                                       <li class="link">
+                                           <a href="../interfaces/PixiGraphicsWrapper.html" >PixiGraphicsWrapper</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#miscellaneous-links"
+                   >
+                                   <span class="fa fa-fw fa-cubes"></span>
+                                   <span>Miscellaneous</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="miscellaneous-links"
+                   >
+                                       <li class="link">
+                                         <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-fw fa-tasks"></span>Documentation coverage</a>
+                           </li>
+                   
+                           <li class="divider"></li>
+                           <li class="copyright">
+                                   Documentation generated using <a href="https://compodoc.github.io/website/" target="_blank">
+                                               <img src="../images/compodoc-vectorise.svg" class="img-responsive">
+                                   </a>
+                           </li>
+                   
+                       </ul>
+                   
+                   </nav>
+               </div>
+               <div class="content module">
+                   <div class="content-data">
+
+
+
+<ol class="breadcrumb">
+  <li>Modules</li>
+  <li>PixiModule</li>
+</ol>
+
+      <div class="text-center module-graph-container">
+          <div id="module-graph-svg">
+              <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.40.1 (20161225.0304)
+ -->
+<!-- Title: dependencies Pages: 1 -->
+<svg width="1833pt" height="284pt"
+ viewBox="0.00 0.00 1833.00 284.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 280)">
+<title>dependencies</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-280 1829,-280 1829,4 -4,4"/>
+<text text-anchor="start" x="891.5091" y="-42.4" font-family="sans-serif" font-weight="bold" font-size="14.00" fill="#000000">Legend</text>
+<polygon fill="#ffffb3" stroke="transparent" points="678.5,-10 678.5,-30 698.5,-30 698.5,-10 678.5,-10"/>
+<text text-anchor="start" x="702.129" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Declarations</text>
+<polygon fill="#8dd3c7" stroke="transparent" points="791.5,-10 791.5,-30 811.5,-30 811.5,-10 791.5,-10"/>
+<text text-anchor="start" x="815.2251" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Module</text>
+<polygon fill="#80b1d3" stroke="transparent" points="877.5,-10 877.5,-30 897.5,-30 897.5,-10 877.5,-10"/>
+<text text-anchor="start" x="901.2812" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Bootstrap</text>
+<polygon fill="#fdb462" stroke="transparent" points="974.5,-10 974.5,-30 994.5,-30 994.5,-10 974.5,-10"/>
+<text text-anchor="start" x="998.1732" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Providers</text>
+<polygon fill="#fb8072" stroke="transparent" points="1070.5,-10 1070.5,-30 1090.5,-30 1090.5,-10 1070.5,-10"/>
+<text text-anchor="start" x="1094.2258" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Exports</text>
+<g id="clust1" class="cluster">
+<title>cluster_PixiModule</title>
+<polygon fill="none" stroke="#000000" stroke-dasharray="1,5" points="8,-70 8,-268 1817,-268 1817,-70 8,-70"/>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_PixiModule_declarations</title>
+<polygon fill="none" stroke="#000000" points="37,-78 37,-130 1796,-130 1796,-78 37,-78"/>
+</g>
+<g id="clust14" class="cluster">
+<title>cluster_PixiModule_exports</title>
+<polygon fill="none" stroke="#000000" points="16,-208 16,-260 1809,-260 1809,-208 16,-208"/>
+</g>
+<!-- PixiApplicationComponent -->
+<g id="node1" class="node">
+<title>PixiApplicationComponent</title>
+<polygon fill="#ffffb3" stroke="#000000" points="1787.9944,-122 1618.0056,-122 1618.0056,-86 1787.9944,-86 1787.9944,-122"/>
+<text text-anchor="middle" x="1703" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">PixiApplicationComponent</text>
+</g>
+<!-- PixiModule -->
+<g id="node11" class="node">
+<title>PixiModule</title>
+<polygon fill="#8dd3c7" stroke="#000000" points="920.1137,-187 917.1137,-191 896.1137,-191 893.1137,-187 837.8863,-187 837.8863,-151 920.1137,-151 920.1137,-187"/>
+<text text-anchor="middle" x="879" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">PixiModule</text>
+</g>
+<!-- PixiApplicationComponent&#45;&gt;PixiModule -->
+<g id="edge1" class="edge">
+<title>PixiApplicationComponent&#45;&gt;PixiModule</title>
+<path fill="none" stroke="#000000" d="M1622.6278,-122.1686C1622.6278,-141.0898 1622.6278,-168 1622.6278,-168 1622.6278,-168 930.3066,-168 930.3066,-168"/>
+<polygon fill="#000000" stroke="#000000" points="930.3066,-164.5001 920.3066,-168 930.3066,-171.5001 930.3066,-164.5001"/>
+</g>
+<!-- PixiSpriteComponent -->
+<g id="node2" class="node">
+<title>PixiSpriteComponent</title>
+<polygon fill="#ffffb3" stroke="#000000" points="1599.8356,-122 1462.1644,-122 1462.1644,-86 1599.8356,-86 1599.8356,-122"/>
+<text text-anchor="middle" x="1531" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">PixiSpriteComponent</text>
+</g>
+<!-- PixiSpriteComponent&#45;&gt;PixiModule -->
+<g id="edge2" class="edge">
+<title>PixiSpriteComponent&#45;&gt;PixiModule</title>
+<path fill="none" stroke="#000000" d="M1555.9725,-122.302C1555.9725,-140.2699 1555.9725,-165 1555.9725,-165 1555.9725,-165 930.0755,-165 930.0755,-165"/>
+<polygon fill="#000000" stroke="#000000" points="930.0756,-161.5001 920.0755,-165 930.0755,-168.5001 930.0756,-161.5001"/>
+</g>
+<!-- PixiInitializerComponent -->
+<g id="node3" class="node">
+<title>PixiInitializerComponent</title>
+<polygon fill="#ffffb3" stroke="#000000" points="1444.3145,-122 1285.6855,-122 1285.6855,-86 1444.3145,-86 1444.3145,-122"/>
+<text text-anchor="middle" x="1365" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">PixiInitializerComponent</text>
+</g>
+<!-- PixiInitializerComponent&#45;&gt;PixiModule -->
+<g id="edge3" class="edge">
+<title>PixiInitializerComponent&#45;&gt;PixiModule</title>
+<path fill="none" stroke="#000000" d="M1392.469,-122.0352C1392.469,-138.7344 1392.469,-161 1392.469,-161 1392.469,-161 930.1514,-161 930.1514,-161"/>
+<polygon fill="#000000" stroke="#000000" points="930.1514,-157.5001 920.1514,-161 930.1513,-164.5001 930.1514,-157.5001"/>
+</g>
+<!-- PixiLayerComponent -->
+<g id="node4" class="node">
+<title>PixiLayerComponent</title>
+<polygon fill="#ffffb3" stroke="#000000" points="1268.0394,-122 1131.9606,-122 1131.9606,-86 1268.0394,-86 1268.0394,-122"/>
+<text text-anchor="middle" x="1200" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">PixiLayerComponent</text>
+</g>
+<!-- PixiLayerComponent&#45;&gt;PixiModule -->
+<g id="edge4" class="edge">
+<title>PixiLayerComponent&#45;&gt;PixiModule</title>
+<path fill="none" stroke="#000000" d="M1222.7564,-122.2819C1222.7564,-137.9478 1222.7564,-158 1222.7564,-158 1222.7564,-158 930.1236,-158 930.1236,-158"/>
+<polygon fill="#000000" stroke="#000000" points="930.1236,-154.5001 920.1236,-158 930.1236,-161.5001 930.1236,-154.5001"/>
+</g>
+<!-- PixiContainerComponent -->
+<g id="node5" class="node">
+<title>PixiContainerComponent</title>
+<polygon fill="#ffffb3" stroke="#000000" points="1113.6038,-122 954.3962,-122 954.3962,-86 1113.6038,-86 1113.6038,-122"/>
+<text text-anchor="middle" x="1034" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">PixiContainerComponent</text>
+</g>
+<!-- PixiContainerComponent&#45;&gt;PixiModule -->
+<g id="edge5" class="edge">
+<title>PixiContainerComponent&#45;&gt;PixiModule</title>
+<path fill="none" stroke="#000000" d="M1007.3994,-122.1243C1007.3994,-136.7832 1007.3994,-155 1007.3994,-155 1007.3994,-155 930.3331,-155 930.3331,-155"/>
+<polygon fill="#000000" stroke="#000000" points="930.3332,-151.5001 920.3331,-155 930.3331,-158.5001 930.3332,-151.5001"/>
+</g>
+<!-- PixiTextComponent -->
+<g id="node6" class="node">
+<title>PixiTextComponent</title>
+<polygon fill="#ffffb3" stroke="#000000" points="936.5548,-122 807.4452,-122 807.4452,-86 936.5548,-86 936.5548,-122"/>
+<text text-anchor="middle" x="872" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">PixiTextComponent</text>
+</g>
+<!-- PixiTextComponent&#45;&gt;PixiModule -->
+<g id="edge6" class="edge">
+<title>PixiTextComponent&#45;&gt;PixiModule</title>
+<path fill="none" stroke="#000000" d="M879,-122.1061C879,-122.1061 879,-140.991 879,-140.991"/>
+<polygon fill="#000000" stroke="#000000" points="875.5001,-140.9909 879,-150.991 882.5001,-140.991 875.5001,-140.9909"/>
+</g>
+<!-- PixiGraphicsComponent -->
+<g id="node7" class="node">
+<title>PixiGraphicsComponent</title>
+<polygon fill="#ffffb3" stroke="#000000" points="789.4284,-122 634.5716,-122 634.5716,-86 789.4284,-86 789.4284,-122"/>
+<text text-anchor="middle" x="712" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">PixiGraphicsComponent</text>
+</g>
+<!-- PixiGraphicsComponent&#45;&gt;PixiModule -->
+<g id="edge7" class="edge">
+<title>PixiGraphicsComponent&#45;&gt;PixiModule</title>
+<path fill="none" stroke="#000000" d="M785.5889,-122.1243C785.5889,-136.7832 785.5889,-155 785.5889,-155 785.5889,-155 827.7566,-155 827.7566,-155"/>
+<polygon fill="#000000" stroke="#000000" points="827.7567,-158.5001 837.7566,-155 827.7566,-151.5001 827.7567,-158.5001"/>
+</g>
+<!-- PixiGraphicsWrapperComponent -->
+<g id="node8" class="node">
+<title>PixiGraphicsWrapperComponent</title>
+<polygon fill="#ffffb3" stroke="#000000" points="616.8932,-122 413.1068,-122 413.1068,-86 616.8932,-86 616.8932,-122"/>
+<text text-anchor="middle" x="515" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">PixiGraphicsWrapperComponent</text>
+</g>
+<!-- PixiGraphicsWrapperComponent&#45;&gt;PixiModule -->
+<g id="edge8" class="edge">
+<title>PixiGraphicsWrapperComponent&#45;&gt;PixiModule</title>
+<path fill="none" stroke="#000000" d="M611.5714,-122.0091C611.5714,-138.0494 611.5714,-159 611.5714,-159 611.5714,-159 827.8004,-159 827.8004,-159"/>
+<polygon fill="#000000" stroke="#000000" points="827.8004,-162.5001 837.8004,-159 827.8003,-155.5001 827.8004,-162.5001"/>
+</g>
+<!-- PixiInitializerDirective -->
+<g id="node9" class="node">
+<title>PixiInitializerDirective</title>
+<polygon fill="#ffffb3" stroke="#000000" points="395.5646,-122 250.4354,-122 250.4354,-86 395.5646,-86 395.5646,-122"/>
+<text text-anchor="middle" x="323" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">PixiInitializerDirective</text>
+</g>
+<!-- PixiInitializerDirective&#45;&gt;PixiModule -->
+<g id="edge9" class="edge">
+<title>PixiInitializerDirective&#45;&gt;PixiModule</title>
+<path fill="none" stroke="#000000" d="M388.4073,-122.0225C388.4073,-139.3734 388.4073,-163 388.4073,-163 388.4073,-163 827.5952,-163 827.5952,-163"/>
+<polygon fill="#000000" stroke="#000000" points="827.5952,-166.5001 837.5952,-163 827.5951,-159.5001 827.5952,-166.5001"/>
+</g>
+<!-- PixiGraphicswrapperDirective -->
+<g id="node10" class="node">
+<title>PixiGraphicswrapperDirective</title>
+<polygon fill="#ffffb3" stroke="#000000" points="232.5352,-122 45.4648,-122 45.4648,-86 232.5352,-86 232.5352,-122"/>
+<text text-anchor="middle" x="139" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">PixiGraphicswrapperDirective</text>
+</g>
+<!-- PixiGraphicswrapperDirective&#45;&gt;PixiModule -->
+<g id="edge10" class="edge">
+<title>PixiGraphicswrapperDirective&#45;&gt;PixiModule</title>
+<path fill="none" stroke="#000000" d="M223.3926,-122.2222C223.3926,-140.8285 223.3926,-167 223.3926,-167 223.3926,-167 827.4915,-167 827.4915,-167"/>
+<polygon fill="#000000" stroke="#000000" points="827.4915,-170.5001 837.4915,-167 827.4914,-163.5001 827.4915,-170.5001"/>
+</g>
+<!-- PixiApplicationComponent  -->
+<g id="node12" class="node">
+<title>PixiApplicationComponent </title>
+<polygon fill="#fb8072" stroke="#000000" points="1800.9951,-252 1627.0049,-252 1627.0049,-216 1800.9951,-216 1800.9951,-252"/>
+<text text-anchor="middle" x="1714" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">PixiApplicationComponent </text>
+</g>
+<!-- PixiModule&#45;&gt;PixiApplicationComponent  -->
+<g id="edge11" class="edge">
+<title>PixiModule&#45;&gt;PixiApplicationComponent </title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M920.0916,-171C1087.291,-171 1707.625,-171 1707.625,-171 1707.625,-171 1707.625,-205.7778 1707.625,-205.7778"/>
+<polygon fill="#000000" stroke="#000000" points="1704.1251,-205.7778 1707.625,-215.7778 1711.1251,-205.7778 1704.1251,-205.7778"/>
+</g>
+<!-- PixiSpriteComponent  -->
+<g id="node13" class="node">
+<title>PixiSpriteComponent </title>
+<polygon fill="#fb8072" stroke="#000000" points="1609.3353,-252 1468.6647,-252 1468.6647,-216 1609.3353,-216 1609.3353,-252"/>
+<text text-anchor="middle" x="1539" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">PixiSpriteComponent </text>
+</g>
+<!-- PixiModule&#45;&gt;PixiSpriteComponent  -->
+<g id="edge12" class="edge">
+<title>PixiModule&#45;&gt;PixiSpriteComponent </title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M920.0632,-174C1060.3941,-174 1512.2775,-174 1512.2775,-174 1512.2775,-174 1512.2775,-205.998 1512.2775,-205.998"/>
+<polygon fill="#000000" stroke="#000000" points="1508.7776,-205.998 1512.2775,-215.998 1515.7776,-205.9981 1508.7776,-205.998"/>
+</g>
+<!-- PixiInitializerComponent  -->
+<g id="node14" class="node">
+<title>PixiInitializerComponent </title>
+<polygon fill="#fb8072" stroke="#000000" points="1450.8143,-252 1289.1857,-252 1289.1857,-216 1450.8143,-216 1450.8143,-252"/>
+<text text-anchor="middle" x="1370" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">PixiInitializerComponent </text>
+</g>
+<!-- PixiModule&#45;&gt;PixiInitializerComponent  -->
+<g id="edge13" class="edge">
+<title>PixiModule&#45;&gt;PixiInitializerComponent </title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M920.3864,-178C1033.731,-178 1340.781,-178 1340.781,-178 1340.781,-178 1340.781,-205.973 1340.781,-205.973"/>
+<polygon fill="#000000" stroke="#000000" points="1337.2811,-205.973 1340.781,-215.973 1344.2811,-205.973 1337.2811,-205.973"/>
+</g>
+<!-- PixiLayerComponent  -->
+<g id="node15" class="node">
+<title>PixiLayerComponent </title>
+<polygon fill="#fb8072" stroke="#000000" points="1271.0386,-252 1130.9614,-252 1130.9614,-216 1271.0386,-216 1271.0386,-252"/>
+<text text-anchor="middle" x="1201" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">PixiLayerComponent </text>
+</g>
+<!-- PixiModule&#45;&gt;PixiLayerComponent  -->
+<g id="edge14" class="edge">
+<title>PixiModule&#45;&gt;PixiLayerComponent </title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M920.1564,-181C1001.9724,-181 1177.2436,-181 1177.2436,-181 1177.2436,-181 1177.2436,-205.7604 1177.2436,-205.7604"/>
+<polygon fill="#000000" stroke="#000000" points="1173.7437,-205.7604 1177.2436,-215.7604 1180.7437,-205.7604 1173.7437,-205.7604"/>
+</g>
+<!-- PixiContainerComponent  -->
+<g id="node16" class="node">
+<title>PixiContainerComponent </title>
+<polygon fill="#fb8072" stroke="#000000" points="1113.1043,-252 950.8957,-252 950.8957,-216 1113.1043,-216 1113.1043,-252"/>
+<text text-anchor="middle" x="1032" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">PixiContainerComponent </text>
+</g>
+<!-- PixiModule&#45;&gt;PixiContainerComponent  -->
+<g id="edge15" class="edge">
+<title>PixiModule&#45;&gt;PixiContainerComponent </title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M920.1513,-184C973.6573,-184 1060.3506,-184 1060.3506,-184 1060.3506,-184 1060.3506,-205.9489 1060.3506,-205.9489"/>
+<polygon fill="#000000" stroke="#000000" points="1056.8507,-205.9488 1060.3506,-215.9489 1063.8507,-205.9489 1056.8507,-205.9488"/>
+</g>
+<!-- PixiTextComponent  -->
+<g id="node17" class="node">
+<title>PixiTextComponent </title>
+<polygon fill="#fb8072" stroke="#000000" points="932.554,-252 799.446,-252 799.446,-216 932.554,-216 932.554,-252"/>
+<text text-anchor="middle" x="866" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">PixiTextComponent </text>
+</g>
+<!-- PixiModule&#45;&gt;PixiTextComponent  -->
+<g id="edge16" class="edge">
+<title>PixiModule&#45;&gt;PixiTextComponent </title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M879,-187.1061C879,-187.1061 879,-205.991 879,-205.991"/>
+<polygon fill="#000000" stroke="#000000" points="875.5001,-205.9909 879,-215.991 882.5001,-205.991 875.5001,-205.9909"/>
+</g>
+<!-- PixiGraphicsComponent  -->
+<g id="node18" class="node">
+<title>PixiGraphicsComponent </title>
+<polygon fill="#fb8072" stroke="#000000" points="781.9278,-252 624.0722,-252 624.0722,-216 781.9278,-216 781.9278,-252"/>
+<text text-anchor="middle" x="703" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">PixiGraphicsComponent </text>
+</g>
+<!-- PixiModule&#45;&gt;PixiGraphicsComponent  -->
+<g id="edge17" class="edge">
+<title>PixiModule&#45;&gt;PixiGraphicsComponent </title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M837.6964,-183C787.1995,-183 708.375,-183 708.375,-183 708.375,-183 708.375,-205.8757 708.375,-205.8757"/>
+<polygon fill="#000000" stroke="#000000" points="704.8751,-205.8757 708.375,-215.8757 711.8751,-205.8757 704.8751,-205.8757"/>
+</g>
+<!-- PixiGraphicsWrapperComponent  -->
+<g id="node19" class="node">
+<title>PixiGraphicsWrapperComponent </title>
+<polygon fill="#fb8072" stroke="#000000" points="606.3928,-252 399.6072,-252 399.6072,-216 606.3928,-216 606.3928,-252"/>
+<text text-anchor="middle" x="503" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">PixiGraphicsWrapperComponent </text>
+</g>
+<!-- PixiModule&#45;&gt;PixiGraphicsWrapperComponent  -->
+<g id="edge18" class="edge">
+<title>PixiModule&#45;&gt;PixiGraphicsWrapperComponent </title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M837.7311,-179C741.4093,-179 509.875,-179 509.875,-179 509.875,-179 509.875,-205.9909 509.875,-205.9909"/>
+<polygon fill="#000000" stroke="#000000" points="506.3751,-205.9909 509.875,-215.9909 513.3751,-205.991 506.3751,-205.9909"/>
+</g>
+<!-- PixiInitializerDirective  -->
+<g id="node20" class="node">
+<title>PixiInitializerDirective </title>
+<polygon fill="#fb8072" stroke="#000000" points="381.0652,-252 232.9348,-252 232.9348,-216 381.0652,-216 381.0652,-252"/>
+<text text-anchor="middle" x="307" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">PixiInitializerDirective </text>
+</g>
+<!-- PixiModule&#45;&gt;PixiInitializerDirective  -->
+<g id="edge19" class="edge">
+<title>PixiModule&#45;&gt;PixiInitializerDirective </title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M837.5921,-175C707.5453,-175 315.875,-175 315.875,-175 315.875,-175 315.875,-205.9775 315.875,-205.9775"/>
+<polygon fill="#000000" stroke="#000000" points="312.3751,-205.9774 315.875,-215.9775 319.3751,-205.9775 312.3751,-205.9774"/>
+</g>
+<!-- PixiGraphicswrapperDirective  -->
+<g id="node21" class="node">
+<title>PixiGraphicswrapperDirective </title>
+<polygon fill="#fb8072" stroke="#000000" points="214.0358,-252 23.9642,-252 23.9642,-216 214.0358,-216 214.0358,-252"/>
+<text text-anchor="middle" x="119" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">PixiGraphicswrapperDirective </text>
+</g>
+<!-- PixiModule&#45;&gt;PixiGraphicswrapperDirective  -->
+<g id="edge20" class="edge">
+<title>PixiModule&#45;&gt;PixiGraphicswrapperDirective </title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M837.9246,-171C681.2384,-171 129.875,-171 129.875,-171 129.875,-171 129.875,-205.7778 129.875,-205.7778"/>
+<polygon fill="#000000" stroke="#000000" points="126.3751,-205.7778 129.875,-215.7778 133.3751,-205.7778 126.3751,-205.7778"/>
+</g>
+</g>
+</svg>
+
+          </div>
+          <i id="fullscreen" class="fa fa-expand module-graph-fullscreen-btn" aria-hidden="true"></i>
+          <div class="btn-group">
+              <button id="zoom-in" class="btn btn-default btn-sm">Zoom in</button>
+              <button id="reset" class="btn btn-default btn-sm">Reset</button>
+              <button id="zoom-out" class="btn btn-default btn-sm">Zoom out</button>
+          </div>
+      </div>
+      <script src="../js/libs/svg-pan-zoom.min.js"></script>
+      <script src="../js/svg-pan-zoom.controls.js"></script>
+
+<ul class="nav nav-tabs" role="tablist">
+    <li class="active">
+        <a href="#info" id="info-tab" role="tab" data-toggle="tab" data-link="info">Info</a>
+    </li>
+
+
+    <li>
+        <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+    </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/pixi-module/pixi-module.module.ts</code>
+        </p>
+
+
+        
+
+        <div class="container-fluid module">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h3>Declarations<a href="https://angular.io/api/core/NgModule#declarations" target="_blank" title="Official documentation about module declarations"><span class="fa fa-info-circle"></span></a></h3>
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                <a href="../components/PixiApplicationComponent.html">PixiApplicationComponent</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="../components/PixiSpriteComponent.html">PixiSpriteComponent</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="../components/PixiInitializerComponent.html">PixiInitializerComponent</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="../components/PixiLayerComponent.html">PixiLayerComponent</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="../components/PixiContainerComponent.html">PixiContainerComponent</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="../components/PixiTextComponent.html">PixiTextComponent</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="../components/PixiGraphicsComponent.html">PixiGraphicsComponent</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="../components/PixiGraphicsWrapperComponent.html">PixiGraphicsWrapperComponent</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="../directives/PixiInitializerDirective.html">PixiInitializerDirective</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="../directives/PixiGraphicswrapperDirective.html">PixiGraphicswrapperDirective</a>
+                            </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h3>EntryComponents<a href="https://angular.io/api/core/NgModule#entryComponents" target="_blank" title="Official documentation about module entryComponents"><span class="fa fa-info-circle"></span></a></h3>
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                <a href="../components/PixiApplicationComponent.html">PixiApplicationComponent</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="../components/PixiLayerComponent.html">PixiLayerComponent</a>
+                            </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h3>Exports<a href="https://angular.io/api/core/NgModule#exports" target="_blank" title="Official documentation about module exports"><span class="fa fa-info-circle"></a></h3>
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                    <a href="../components/PixiApplicationComponent.html" >PixiApplicationComponent</a>
+                            </li>
+                            <li class="list-group-item">
+                                    <a href="../components/PixiSpriteComponent.html" >PixiSpriteComponent</a>
+                            </li>
+                            <li class="list-group-item">
+                                    <a href="../components/PixiInitializerComponent.html" >PixiInitializerComponent</a>
+                            </li>
+                            <li class="list-group-item">
+                                    <a href="../components/PixiLayerComponent.html" >PixiLayerComponent</a>
+                            </li>
+                            <li class="list-group-item">
+                                    <a href="../components/PixiContainerComponent.html" >PixiContainerComponent</a>
+                            </li>
+                            <li class="list-group-item">
+                                    <a href="../components/PixiTextComponent.html" >PixiTextComponent</a>
+                            </li>
+                            <li class="list-group-item">
+                                    <a href="../components/PixiGraphicsComponent.html" >PixiGraphicsComponent</a>
+                            </li>
+                            <li class="list-group-item">
+                                    <a href="../components/PixiGraphicsWrapperComponent.html" >PixiGraphicsWrapperComponent</a>
+                            </li>
+                            <li class="list-group-item">
+                                    <a href="../directives/PixiInitializerDirective.html" >PixiInitializerDirective</a>
+                            </li>
+                            <li class="list-group-item">
+                                    <a href="../directives/PixiGraphicswrapperDirective.html" >PixiGraphicswrapperDirective</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="tab-pane fade tab-source-code" id="c-source">
+        <pre class="line-numbers"><code class="language-typescript">import { NgModule } from &#x27;@angular/core&#x27;;
+import { CommonModule } from &#x27;@angular/common&#x27;;
+import { PixiApplicationComponent } from &#x27;../pixi-application/pixi-application.component&#x27;;
+import { PixiSpriteComponent } from &#x27;../pixi-sprite/pixi-sprite.component&#x27;;
+import { PixiInitializerComponent } from &#x27;../pixi-initializer/pixi-initializer.component&#x27;;
+import { PixiLayerComponent } from &#x27;../pixi-layer/pixi-layer.component&#x27;;
+import { PixiContainerComponent } from &#x27;../pixi-container/pixi-container.component&#x27;;
+import { PixiTextComponent } from &#x27;../pixi-text/pixi-text.component&#x27;;
+import { PixiGraphicsComponent } from &#x27;../pixi-graphics/pixi-graphics.component&#x27;;
+import { PixiGraphicsWrapperComponent } from &#x27;../pixi-graphicswrapper/pixi-graphicswrapper.component&#x27;;
+import { PixiInitializerDirective } from &#x27;../pixi-initializer/pixi-initializer.directive&#x27;;
+import { PixiGraphicswrapperDirective } from &#x27;../pixi-graphicswrapper/pixi-graphicswrapper.directive&#x27;;
+
+@NgModule({
+    imports: [CommonModule],
+    declarations: [
+        PixiApplicationComponent,
+        PixiSpriteComponent,
+        PixiInitializerComponent,
+        PixiLayerComponent,
+        PixiContainerComponent,
+        PixiTextComponent,
+        PixiGraphicsComponent,
+        PixiGraphicsWrapperComponent,
+        PixiInitializerDirective,
+        PixiGraphicswrapperDirective
+    ],
+    entryComponents: [PixiApplicationComponent, PixiLayerComponent],
+    exports: [
+        PixiApplicationComponent,
+        PixiSpriteComponent,
+        PixiInitializerComponent,
+        PixiLayerComponent,
+        PixiContainerComponent,
+        PixiTextComponent,
+        PixiGraphicsComponent,
+        PixiGraphicsWrapperComponent,
+        PixiInitializerDirective,
+        PixiGraphicswrapperDirective
+    ]
+})
+export class PixiModule {}
+</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+           </div>
+       </div>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script>var COMPODOC_CURRENT_PAGE_DEPTH = 1;</script>
+
+       <script src="../js/search/search.js"></script>
+       <script src="../js/search/lunr.min.js"></script>
+       <script src="../js/search/search-lunr.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/search/search_index.js"></script>
+
+
+    </body>
+</html>

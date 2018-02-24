@@ -1,50 +1,52 @@
-import { Component, OnInit, ViewContainerRef, AfterContentInit, ElementRef, ContentChildren } from '@angular/core';
+import {
+    Component,
+    OnInit,
+    ViewContainerRef,
+    AfterContentInit,
+    ElementRef,
+    ContentChildren,
+    QueryList
+} from '@angular/core';
 import 'pixi.js';
 import { PixiSpriteComponent } from '../pixi-sprite/pixi-sprite.component';
+import { PixiContainerComponent } from '../pixi-container/pixi-container.component';
+import { PixiTextComponent } from '../pixi-text/pixi-text.component';
+import { PixiGraphicsWrapperComponent } from '../pixi-graphicswrapper/pixi-graphicswrapper.component';
+
 @Component({
-  selector: 'pixi-application',
-  templateUrl: './pixi-application.component.html',
-  styleUrls: ['./pixi-application.component.css']
+    selector: 'pixi-application',
+    templateUrl: './pixi-application.component.html',
+    styleUrls: ['./pixi-application.component.css']
 })
-export class PixiApplicationComponent implements OnInit, AfterContentInit {
-  @ContentChildren(Component) children: Component;
-  width: number;
-  height: number;
+export class PixiApplicationComponent implements OnInit {
+    width: number;
+    height: number;
+    application: PIXI.Application;
+    options: PIXI.ApplicationOptions;
+    sprites: QueryList<PixiSpriteComponent>;
+    texts: QueryList<PixiTextComponent>;
+    containers: QueryList<PixiContainerComponent>;
+    graphicswrappers: QueryList<PixiGraphicsWrapperComponent>;
 
+    constructor(public vcr: ViewContainerRef) {}
 
-  ngAfterContentInit(): void {
-    this.width = this.elem.nativeElement.getBoundingClientRect().width;
-    this.height = this.elem.nativeElement.getBoundingClientRect().height; 
-    console.log(this.elem);
-    console.log(this.height);
-    console.log(this.width);
-    console.log(this.elem.nativeElement.offsetWidth);
-    console.log(this.children);
-    console.log(this.vcr);
-    /*const children: HTMLCollection= this.elem.nativeElement.children;
-    const itemHeights = Array.from(children)
-    .map(x => x.getBoundingClientRect().height);
-    console.log(children);
-    console.log(itemHeights);*/
-    const renderer = new PIXI.Application(this.width, this.height);
-    //document.body.appendChild(renderer.view);
-    this.elem.nativeElement.appendChild(renderer.view);
-    renderer.view.style.position = 'absolute';
-    let text = document.createElement("input");
-    text.style.position='absolute';
-    this.elem.nativeElement.appendChild(text);
-    const stage = new PIXI.Container();
-  }
-
-  constructor(private elem: ElementRef,private vcr: ViewContainerRef) {}
-
-  ngOnInit() {
-      let div = document.createElement('div');
-      let content = document.createElement('ng-content');
-      div.appendChild(content);
-      this.elem.nativeElement.appendChild(div);
-  }
-
-
-
+    ngOnInit() {
+        this.application = new PIXI.Application(this.width, this.height, this.options);
+        this.vcr.element.nativeElement.appendChild(this.application.view);
+        this.vcr.element.nativeElement.style = 'position:absolute;';
+        this.containers.forEach(container => {
+            this.application.stage.addChild(container);
+        });
+        this.sprites.forEach(sprite => {
+            this.application.stage.addChild(sprite);
+        });
+        this.texts.forEach(text => {
+            this.application.stage.addChild(text);
+        });
+        this.graphicswrappers.forEach(wrapper => {
+            wrapper.graphicslist.forEach(graphics => {
+                this.application.stage.addChild(graphics);
+            });
+        });
+    }
 }

@@ -1,0 +1,840 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>pixi-module documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	    <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">pixi-module documentation</a>
+            <button type="button" class="btn btn-default btn-menu fa fa-bars" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <div id="book-search-input" role="search">
+                <input type="text" placeholder="Type to search">
+            </div>
+            <nav>
+            
+                <ul class="list">
+            
+                    <li class="title">
+                        <a href="../index.html">pixi-module documentation</a>
+                    </li>
+            
+                    <li class="divider"></li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../index.html"><span class="fa fa-home"></span>Getting started</a>
+                        <ul class="links">
+                                <li class="link">
+                                    <a 
+                                        
+                                         href="../overview.html" 
+                                         href="../overview.html" 
+                                        >
+                                        <span class="fa fa-fw fa-th"></span>Overview
+                                    </a>
+                                </li>
+                                <li class="link">
+                                  <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../dependencies.html"
+                                        
+                                        >
+                                        <span class="fa fa-fw fa-list"></span>Dependencies
+                                    </a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../modules.html" >
+                            <div class="menu-toggler linked" data-toggle="collapse"
+                                    data-target="#xs-modules-links"
+                            >
+                                <span class="fa fa-fw fa-archive"></span>
+                                <span class="link-name">Modules</span>
+                                <span class="fa fa-angle-down"></span>
+                            </div>
+                        </a>
+                        <ul class="links collapse "
+                                id="xs-modules-links"
+                            >
+                                <li class="link">
+                                    <a href="../modules/AppModule.html" >AppModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/PixiModule.html" >PixiModule</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-components-links"
+                            >
+                            <span class="fa fa-fw fa-cogs"></span>
+                            <span>Components</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-components-links"
+                            >
+                                <li class="link">
+                                    <a href="../components/AppComponent.html"  data-type="entity-link" class="active" >AppComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/Example1Component.html" >Example1Component</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/Example2Component.html" >Example2Component</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/Example3Component.html" >Example3Component</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/Example4Component.html" >Example4Component</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/Example5Component.html" >Example5Component</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/Example6Component.html" >Example6Component</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/ExampleGraphicswrapperComponent.html" >ExampleGraphicswrapperComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/PixiApplicationComponent.html" >PixiApplicationComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/PixiContainerComponent.html" >PixiContainerComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/PixiGraphicsComponent.html" >PixiGraphicsComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/PixiGraphicsWrapperComponent.html" >PixiGraphicsWrapperComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/PixiInitializerComponent.html" >PixiInitializerComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/PixiLayerComponent.html" >PixiLayerComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/PixiSpriteComponent.html" >PixiSpriteComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/PixiTextComponent.html" >PixiTextComponent</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-directives-links"
+                            >
+                            <span class="fa fa-fw fa-code"></span>
+                            <span>Directives</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-directives-links"
+                            >
+                                <li class="link">
+                                    <a href="../directives/PixiGraphicswrapperDirective.html" >PixiGraphicswrapperDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/PixiInitializerDirective.html" >PixiInitializerDirective</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-classes-links"
+                            >
+                            <span class="fa fa-fw fa-file-code-o"></span>
+                            <span>Classes</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-classes-links"
+                            >
+                                <li class="link">
+                                    <a href="../classes/AppPage.html" >AppPage</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-interfaces-links"
+                            >
+                            <span class="fa fa-fw fa-info"></span>
+                            <span>Interfaces</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-interfaces-links"
+                            >
+                                <li class="link">
+                                    <a href="../interfaces/PixiGraphicsWrapper.html" >PixiGraphicsWrapper</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-miscellaneous-links"
+                            >
+                            <span class="fa fa-fw fa-cubes"></span>
+                            <span>Miscellaneous</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-miscellaneous-links"
+                            >
+                                <li class="link">
+                                  <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-fw fa-tasks"></span>Documentation coverage</a>
+                    </li>
+            
+                    <li class="divider"></li>
+                    <li class="copyright">
+                            Documentation generated using <a href="https://compodoc.github.io/website/" target="_blank">
+                                        <img src="../images/compodoc-vectorise.svg" class="img-responsive">
+                            </a>
+                    </li>
+            
+                </ul>
+            
+            </nav>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <nav>
+                   
+                       <ul class="list">
+                   
+                           <li class="title">
+                               <a href="../index.html">pixi-module documentation</a>
+                           </li>
+                   
+                           <li class="divider"></li>
+                   
+                               <div id="book-search-input" role="search">
+                                   <input type="text" placeholder="Type to search">
+                               </div>
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../index.html"><span class="fa fa-home"></span>Getting started</a>
+                               <ul class="links">
+                                       <li class="link">
+                                           <a 
+                                               
+                                                href="../overview.html" 
+                                                href="../overview.html" 
+                                               >
+                                               <span class="fa fa-fw fa-th"></span>Overview
+                                           </a>
+                                       </li>
+                                       <li class="link">
+                                         <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../dependencies.html"
+                                               
+                                               >
+                                               <span class="fa fa-fw fa-list"></span>Dependencies
+                                           </a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../modules.html" >
+                                   <div class="menu-toggler linked" data-toggle="collapse"
+                                           data-target="#modules-links"
+                                   >
+                                       <span class="fa fa-fw fa-archive"></span>
+                                       <span class="link-name">Modules</span>
+                                       <span class="fa fa-angle-down"></span>
+                                   </div>
+                               </a>
+                               <ul class="links collapse "
+                                       id="modules-links"
+                   >
+                                       <li class="link">
+                                           <a href="../modules/AppModule.html" >AppModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/PixiModule.html" >PixiModule</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#components-links"
+                   >
+                                   <span class="fa fa-fw fa-cogs"></span>
+                                   <span>Components</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="components-links"
+                   >
+                                       <li class="link">
+                                           <a href="../components/AppComponent.html"  data-type="entity-link" class="active" >AppComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/Example1Component.html" >Example1Component</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/Example2Component.html" >Example2Component</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/Example3Component.html" >Example3Component</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/Example4Component.html" >Example4Component</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/Example5Component.html" >Example5Component</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/Example6Component.html" >Example6Component</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/ExampleGraphicswrapperComponent.html" >ExampleGraphicswrapperComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/PixiApplicationComponent.html" >PixiApplicationComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/PixiContainerComponent.html" >PixiContainerComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/PixiGraphicsComponent.html" >PixiGraphicsComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/PixiGraphicsWrapperComponent.html" >PixiGraphicsWrapperComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/PixiInitializerComponent.html" >PixiInitializerComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/PixiLayerComponent.html" >PixiLayerComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/PixiSpriteComponent.html" >PixiSpriteComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/PixiTextComponent.html" >PixiTextComponent</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#directives-links"
+                   >
+                                   <span class="fa fa-fw fa-code"></span>
+                                   <span>Directives</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="directives-links"
+                   >
+                                       <li class="link">
+                                           <a href="../directives/PixiGraphicswrapperDirective.html" >PixiGraphicswrapperDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/PixiInitializerDirective.html" >PixiInitializerDirective</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#classes-links"
+                   >
+                                   <span class="fa fa-fw fa-file-code-o"></span>
+                                   <span>Classes</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="classes-links"
+                   >
+                                       <li class="link">
+                                           <a href="../classes/AppPage.html" >AppPage</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#interfaces-links"
+                   >
+                                   <span class="fa fa-fw fa-info"></span>
+                                   <span>Interfaces</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="interfaces-links"
+                   >
+                                       <li class="link">
+                                           <a href="../interfaces/PixiGraphicsWrapper.html" >PixiGraphicsWrapper</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#miscellaneous-links"
+                   >
+                                   <span class="fa fa-fw fa-cubes"></span>
+                                   <span>Miscellaneous</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="miscellaneous-links"
+                   >
+                                       <li class="link">
+                                         <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-fw fa-tasks"></span>Documentation coverage</a>
+                           </li>
+                   
+                           <li class="divider"></li>
+                           <li class="copyright">
+                                   Documentation generated using <a href="https://compodoc.github.io/website/" target="_blank">
+                                               <img src="../images/compodoc-vectorise.svg" class="img-responsive">
+                                   </a>
+                           </li>
+                   
+                       </ul>
+                   
+                   </nav>
+               </div>
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>AppComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+    <li class="active">
+        <a href="#info" id="info-tab" role="tab" data-toggle="tab" data-link="info">Info</a>
+    </li>
+
+    <li>
+        <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+    </li>
+
+    <li>
+        <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+    </li>
+    <li>
+        <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+    </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/app.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-root</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>app.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./app.component.html</code></td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+        <h3 id="index">Index</h3>
+        <table class="table table-sm table-bordered index-table">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#textStyle">textStyle</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h3 id="constructor">Constructor</h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+    <code>constructor()</code>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/app.component.ts:8</a></div>
+                                </td>
+                            </tr>
+    
+                </tbody>
+            </table>
+    </section>
+
+
+
+
+
+    <section>
+        
+            <h3 id="methods">
+                Methods
+            </h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="ngOnInit"></a>
+                            <span class="name">
+                                <b>
+                                ngOnInit
+                                </b>
+                                <a href="#ngOnInit"><span class="fa fa-link"></span></a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+    <code>ngOnInit()</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/app.component.ts:11</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="textStyle"></a>
+                            <span class="name">
+                                <b>
+                                textStyle
+                                </b>
+                                <a href="#textStyle"><span class="fa fa-link"></span></a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+    <code>textStyle()</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/app.component.ts:13</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code>PIXI.TextStyle</code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+    </section>
+
+
+</div>
+
+
+    <div class="tab-pane fade tab-source-code" id="c-source">
+        <pre class="line-numbers"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+
+@Component({
+    selector: &#x27;app-root&#x27;,
+    templateUrl: &#x27;./app.component.html&#x27;,
+    styleUrls: [&#x27;./app.component.css&#x27;]
+})
+export class AppComponent implements OnInit {
+    constructor() {}
+
+    ngOnInit(): void {}
+
+    textStyle(): PIXI.TextStyle {
+        return new PIXI.TextStyle({
+            stroke: &#x27;#FCFF00&#x27;,
+            fontFamily: &#x27;Arial&#x27;,
+            fontSize: 24,
+            fill: &#x27;white&#x27;,
+            align: &#x27;center&#x27;
+        });
+    }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade" id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;example1&gt;
+    &lt;pixi-container&gt;
+        &lt;pixi-sprite 
+            [width]&#x3D;&#x27;50&#x27; 
+            [height]&#x3D;&#x27;50&#x27; 
+            [x]&#x3D;&#x27;50&#x27; 
+            [y]&#x3D;&#x27;50&#x27; 
+            [fromImageUrl]&#x3D;&quot;&#x27;../assets/minimize.svg&#x27;&quot;&gt;
+        &lt;/pixi-sprite&gt;
+        &lt;pixi-text 
+            [text]&#x3D;&quot;&#x27;hello&#x27;&quot; 
+            [x]&#x3D;&#x27;200&#x27; 
+            [style]&#x3D;textStyle()&gt;
+        &lt;/pixi-text&gt;
+    &lt;/pixi-container&gt; 
+    &lt;pixi-text 
+        [text]&#x3D;&quot;&#x27;hello&#x27;&quot; 
+        [x]&#x3D;&#x27;200&#x27;&gt;
+    &lt;/pixi-text&gt;
+&lt;/example1&gt;
+&lt;example2 pixi-initializer&gt;
+    &lt;pixi-container&gt;
+        &lt;pixi-sprite 
+            [width]&#x3D;&#x27;50&#x27; 
+            [height]&#x3D;&#x27;50&#x27; 
+            [x]&#x3D;&#x27;50&#x27; 
+            [y]&#x3D;&#x27;50&#x27; 
+            [fromImageUrl]&#x3D;&quot;&#x27;../assets/minimize.svg&#x27;&quot;&gt;
+        &lt;/pixi-sprite&gt;
+        &lt;pixi-text 
+            [text]&#x3D;&quot;&#x27;oh no&#x27;&quot;&gt;
+        &lt;/pixi-text&gt;
+        &lt;example-graphicswrapper&gt;
+            &lt;pixi-graphics 
+                [name]&#x3D;&quot;&#x27;hi&#x27;&quot;&gt;
+            &lt;/pixi-graphics&gt;
+        &lt;/example-graphicswrapper&gt;
+    &lt;/pixi-container&gt; 
+&lt;/example2&gt;
+&lt;example3 pixi-initializer&gt;
+    &lt;pixi-sprite 
+        [width]&#x3D;&#x27;50&#x27; 
+        [height]&#x3D;&#x27;50&#x27; 
+        [x]&#x3D;&#x27;50&#x27; 
+        [y]&#x3D;&#x27;50&#x27; 
+        [fromImageUrl]&#x3D;&quot;&#x27;../assets/minimize.svg&#x27;&quot;&gt;
+    &lt;/pixi-sprite&gt;
+&lt;/example3&gt;
+&lt;example4 pixi-initializer&gt;
+    &lt;pixi-text 
+        [text]&#x3D;&quot;&#x27;hello&#x27;&quot; 
+        [x]&#x3D;&#x27;200&#x27; 
+        [style]&#x3D;textStyle()&gt;
+    &lt;/pixi-text&gt;
+&lt;/example4&gt;
+&lt;example5 pixi-initializer&gt;
+    &lt;example-graphicswrapper&gt;
+        &lt;pixi-graphics 
+            [name]&#x3D;&quot;&#x27;hi&#x27;&quot;&gt;
+        &lt;/pixi-graphics&gt;
+    &lt;/example-graphicswrapper&gt;
+&lt;/example5&gt;
+&lt;example6 pixi-initializer&gt;
+    
+&lt;/example6&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade" id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><example1>    <pixi-container>        <pixi-sprite             [width]=\'50\'             [height]=\'50\'             [x]=\'50\'             [y]=\'50\'             [fromImageUrl]="\'../assets/minimize.svg\'">        </pixi-sprite>        <pixi-text             [text]="\'hello\'"             [x]=\'200\'             [style]=textStyle()>        </pixi-text>    </pixi-container>     <pixi-text         [text]="\'hello\'"         [x]=\'200\'>    </pixi-text></example1><example2 pixi-initializer>    <pixi-container>        <pixi-sprite             [width]=\'50\'             [height]=\'50\'             [x]=\'50\'             [y]=\'50\'             [fromImageUrl]="\'../assets/minimize.svg\'">        </pixi-sprite>        <pixi-text             [text]="\'oh no\'">        </pixi-text>        <example-graphicswrapper>            <pixi-graphics                 [name]="\'hi\'">            </pixi-graphics>        </example-graphicswrapper>    </pixi-container> </example2><example3 pixi-initializer>    <pixi-sprite         [width]=\'50\'         [height]=\'50\'         [x]=\'50\'         [y]=\'50\'         [fromImageUrl]="\'../assets/minimize.svg\'">    </pixi-sprite></example3><example4 pixi-initializer>    <pixi-text         [text]="\'hello\'"         [x]=\'200\'         [style]=textStyle()>    </pixi-text></example4><example5 pixi-initializer>    <example-graphicswrapper>        <pixi-graphics             [name]="\'hi\'">        </pixi-graphics>    </example-graphicswrapper></example5><example6 pixi-initializer>    </example6></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'Example1Component', 'selector': 'example1'},{'name': 'Example2Component', 'selector': 'example2'},{'name': 'Example3Component', 'selector': 'example3'},{'name': 'Example4Component', 'selector': 'example4'},{'name': 'Example5Component', 'selector': 'example5'},{'name': 'Example6Component', 'selector': 'example6'},{'name': 'ExampleGraphicswrapperComponent', 'selector': 'example-graphicswrapper'},{'name': 'PixiApplicationComponent', 'selector': 'pixi-application'},{'name': 'PixiContainerComponent', 'selector': 'pixi-container'},{'name': 'PixiGraphicsComponent', 'selector': 'pixi-graphics'},{'name': 'PixiGraphicsWrapperComponent', 'selector': 'pixi-graphicswrapper'},{'name': 'PixiInitializerComponent', 'selector': 'pixi-initializer'},{'name': 'PixiLayerComponent', 'selector': 'pixi-layer'},{'name': 'PixiSpriteComponent', 'selector': 'pixi-sprite'},{'name': 'PixiTextComponent', 'selector': 'pixi-text'}];
+    var DIRECTIVES = [{'name': 'PixiGraphicswrapperDirective', 'selector': '[pixi-graphicswrapper]'},{'name': 'PixiInitializerDirective', 'selector': '[pixi-initializer]'}];
+    var ACTUAL_COMPONENT = {'name': 'AppComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+           </div>
+       </div>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script>var COMPODOC_CURRENT_PAGE_DEPTH = 1;</script>
+
+       <script src="../js/search/search.js"></script>
+       <script src="../js/search/lunr.min.js"></script>
+       <script src="../js/search/search-lunr.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/search/search_index.js"></script>
+
+
+    </body>
+</html>

@@ -1,6 +1,65 @@
-<pixi-application>
-    <pixi-sprite></pixi-sprite>
-</pixi-application>
-<h1>
-    Welcome to app!
-</h1>
+<example1>
+    <pixi-container>
+        <pixi-sprite 
+            [width]='50' 
+            [height]='50' 
+            [x]='50' 
+            [y]='50' 
+            [fromImageUrl]="'../assets/minimize.svg'">
+        </pixi-sprite>
+        <pixi-text 
+            [text]="'hello'" 
+            [x]='200' 
+            [style]=textStyle()>
+        </pixi-text>
+    </pixi-container> 
+    <pixi-text 
+        [text]="'hello'" 
+        [x]='200'>
+    </pixi-text>
+</example1>
+<example2 pixi-initializer>
+    <pixi-container>
+        <pixi-sprite 
+            [width]='50' 
+            [height]='50' 
+            [x]='50' 
+            [y]='50' 
+            [fromImageUrl]="'../assets/minimize.svg'">
+        </pixi-sprite>
+        <pixi-text 
+            [text]="'oh no'">
+        </pixi-text>
+        <example-graphicswrapper>
+            <pixi-graphics 
+                [name]="'hi'">
+            </pixi-graphics>
+        </example-graphicswrapper>
+    </pixi-container> 
+</example2>
+<example3 pixi-initializer>
+    <pixi-sprite 
+        [width]='50' 
+        [height]='50' 
+        [x]='50' 
+        [y]='50' 
+        [fromImageUrl]="'../assets/minimize.svg'">
+    </pixi-sprite>
+</example3>
+<example4 pixi-initializer>
+    <pixi-text 
+        [text]="'hello'" 
+        [x]='200' 
+        [style]=textStyle()>
+    </pixi-text>
+</example4>
+<example5 pixi-initializer>
+    <example-graphicswrapper>
+        <pixi-graphics 
+            [name]="'hi'">
+        </pixi-graphics>
+    </example-graphicswrapper>
+</example5>
+<example6 pixi-initializer>
+    
+</example6>
