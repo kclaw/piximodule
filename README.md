@@ -272,7 +272,7 @@ In usual case, angular cli helps to generate those Component related files
 
 ## 1.0.0-beta.2 
 - [x] uses Angular Directive instead of class inheritance
-      - [ ] PixiInitializerComponent
+    - [x] PixiInitializerComponent
 - [ ] introduces Responsive on pixi application
 
 - - -
