@@ -248,8 +248,8 @@ In usual case, angular cli helps to generate those Component related files
     ```
     4. for more information, you might read following
     > reference document
-    > /documentation
-    > /typedoc
+    > ./docs/documentation
+    > ./docs/typedoc
     > example codes
     > /src/examples
 
