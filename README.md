@@ -94,21 +94,21 @@ The project will develop a module fully supporting pixi v4 elements as well as u
 </pixi-initializer>
 ```
 
-known pixi elements integration:
+known pixi elements integration: (checked=usage done)
 * [x] application (delegate to and started by pixi-initializer)
 * [x] sprite
 * [x] container
-* [] loader
-* [] animated-sprite
-* [] tiling-sprite
-* [] textstyle
-* [] text
-* [] graphics
-* [] texture
-* [] baserendertexture
-* [] rendertexture
-* [] mesh
-* [] filter
+* [ ] loader
+* [ ] animated-sprite
+* [ ] tiling-sprite
+* [ ] textstyle
+* [ ] text
+* [ ] graphics
+* [ ] texture
+* [ ] baserendertexture
+* [ ] rendertexture
+* [ ] mesh
+* [ ] filter
 
 
 ## Angular Component, its selector and its file Naming Rule
@@ -129,7 +129,7 @@ and suffix are same for rules.
 
 >for example,
 >
->PixiGraphicWrapperComponent can not be mapped to >PIXI.GraphicWrapper
+>PixiGraphicWrapperComponent can not be mapped to PIXI.GraphicWrapper
 
 
 
@@ -225,8 +225,10 @@ In usual case, angular cli helps to generate those Component related files
     (app.component.html)
 - - -
 # Quick Start
+    ## for developer
     for developer of this module, you are pleased to fork this repository on github. Have fun.
 
+    ## for user
     for user of this module, please follow instructions below.
 
     1. create a new project
@@ -244,6 +246,14 @@ In usual case, angular cli helps to generate those Component related files
     (inside app.component.ts of your project)
     import * from 'pixi-module';
     ```
+    4. for more information, you might read following
+    > reference document
+    > /documentation
+    > /typedoc
+    > example codes
+    > /src/examples
+
+
 
 # Change log
 ## 1.0.0-beta.1 (current)
@@ -258,10 +268,11 @@ In usual case, angular cli helps to generate those Component related files
 - [x] support typedoc
 - [x] support prettier
 - [x] support ng-packagr
+- [x] introduce examples
 
 ## 1.0.0-beta.2 
 - [x] use Angular Directive instead of class inheritance
-- [] introduce Responsive on pixi application
+- [ ] introduce Responsive on pixi application
 
 - - -
 # Reference
