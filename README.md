@@ -225,10 +225,10 @@ In usual case, angular cli helps to generate those Component related files
     (app.component.html)
 - - -
 # Quick Start
-    ## for developer
+## for developer
     for developer of this module, you are pleased to fork this repository on github. Have fun.
 
-    ## for user
+## for user
     for user of this module, please follow instructions below.
 
     1. create a new project
@@ -257,22 +257,23 @@ In usual case, angular cli helps to generate those Component related files
 
 # Change log
 ## 1.0.0-beta.1 (current)
-- [x] introduce PixiApplicationComponent
-- [x] introduce PixiInitializerComponent
-- [x] introduce PixiGraphicsWrapperComponent
-- [x] introduce PixiGraphicscomponent
-- [x] introduce PixiLayerComponent
-- [x] intorduce PixiSpriteComponent
-- [x] introduce PixiTextComponent
-- [x] support compodoc
-- [x] support typedoc
-- [x] support prettier
-- [x] support ng-packagr
-- [x] introduce examples
+- [x] introduces PixiApplicationComponent
+- [x] introduces PixiInitializerComponent
+- [x] introduces PixiGraphicsWrapperComponent
+- [x] introduces PixiGraphicscomponent
+- [x] introduces PixiLayerComponent
+- [x] intorduces PixiSpriteComponent
+- [x] introduces PixiTextComponent
+- [x] supports compodoc
+- [x] supports typedoc
+- [x] supports prettier
+- [x] supports ng-packagr
+- [x] provides examples
 
 ## 1.0.0-beta.2 
-- [x] use Angular Directive instead of class inheritance
-- [ ] introduce Responsive on pixi application
+- [x] uses Angular Directive instead of class inheritance
+      - [ ] PixiInitializerComponent
+- [ ] introduces Responsive on pixi application
 
 - - -
 # Reference
