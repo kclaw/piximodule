@@ -5,10 +5,10 @@ import { PixiGraphicsWrapperComponent } from '../pixi-graphicswrapper/pixi-graph
 import { PixiTextComponent } from '../pixi-text/pixi-text.component';
 import { PixiApplicationComponent } from '../pixi-application/pixi-application.component';
 
-/** 
+/**
  * inherits PIXI.Container
  * {@link http://pixijs.download/dev/docs/PIXI.Container.html PIXI.Container}
-*/
+ */
 @Component({
     selector: 'pixi-container',
     templateUrl: './pixi-container.component.html',

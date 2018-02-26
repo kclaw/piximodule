@@ -15,15 +15,14 @@ import { PixiContainerComponent } from '../pixi-container/pixi-container.compone
 import { PixiGraphicsWrapperComponent } from '../pixi-graphicswrapper/pixi-graphicswrapper.component';
 import { PixiTextComponent } from '../pixi-text/pixi-text.component';
 
-/** 
+/**
  * responsible for initialization of PixiApplicationComponent
  * in creation of template-pixi stack
-*/
+ */
 @Directive({
     selector: '[pixi-initializer]'
 })
 export class PixiInitializerDirective {
-
     /**
      * refers to content children with type of PixiSpriteComponent in PixiInitializerDirective
      */
@@ -35,13 +34,13 @@ export class PixiInitializerDirective {
     @ContentChildren(PixiContainerComponent) containers;
 
     /**
-    * refers to content children with type of PixiGraphicsWrapperComponent in PixiInitializerDirective
-    */
+     * refers to content children with type of PixiGraphicsWrapperComponent in PixiInitializerDirective
+     */
     @ContentChildren(PixiGraphicsWrapperComponent) graphicswrappers;
 
     /**
-    * refers to content children with type of PixiTextComponent in PixiInitializerDirective
-    */
+     * refers to content children with type of PixiTextComponent in PixiInitializerDirective
+     */
     @ContentChildren(PixiTextComponent) texts;
 
     constructor(

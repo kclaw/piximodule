@@ -490,9 +490,8 @@
         <h3>Description</h3>
     </p>
     <p class="comment">
-        <p>reference to PIXI.Container
-{@link <a href="http://www.yahoo.com.hk}">http://www.yahoo.com.hk}</a>
-{ @link <a href="http://pixijs.download/dev/docs/PIXI.Container.html">http://pixijs.download/dev/docs/PIXI.Container.html</a> PIXI.Container }</p>
+        <p>inherits PIXI.Container
+{@link <a href="http://pixijs.download/dev/docs/PIXI.Container.html">http://pixijs.download/dev/docs/PIXI.Container.html</a> PIXI.Container}</p>
 
     </p>
 
@@ -517,7 +516,7 @@
 
             <tr>
                 <td class="col-md-3">inputs</td>
-                <td class="col-md-9"><code>x,<br>y,<br>alpha,<br>buttonMode,<br>cacheAsBitmap,<br>children,<br>cursor,<br>filterArea,<br>filters,<br>height,<br>hitArea,<br> interactive,<br>interactiveChildren,<br>mask,<br>name,<br>pivot,<br>position,<br>renderable,<br>rotation,<br>scale,<br>skew,<br>transform,<br>visible,<br>width</code></td>
+                <td class="col-md-9"><code>x,<br>y,<br>alpha,<br>buttonMode,<br>cacheAsBitmap,<br>children,<br>cursor,<br>filterArea,<br>filters,<br>height,<br>hitArea,<br>interactive,<br>interactiveChildren,<br>mask,<br>name,<br>pivot,<br>position,<br>renderable,<br>rotation,<br>scale,<br>skew,<br>transform,<br>visible,<br>width</code></td>
             </tr>
 
 
@@ -600,7 +599,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/app/pixi-container/pixi-container.component.ts:50</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/app/pixi-container/pixi-container.component.ts:58</a></div>
                                 </td>
                             </tr>
     
@@ -639,7 +638,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/app/pixi-container/pixi-container.component.ts:56</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="64" class="link-to-prism">src/app/pixi-container/pixi-container.component.ts:64</a></div>
                                 </td>
                             </tr>
     
@@ -693,10 +692,16 @@
                         </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/pixi-container/pixi-container.component.ts:48</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">src/app/pixi-container/pixi-container.component.ts:53</a></div>
                                 </td>
                             </tr>
     
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-description"><p>refers to content children of PixiGraphicsWrapperComponent in PixiContainerComponent</p>
+    </div>
+                        </td>
+                    </tr>
     
                 </tbody>
             </table>
@@ -732,10 +737,16 @@
                         </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/pixi-container/pixi-container.component.ts:45</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/app/pixi-container/pixi-container.component.ts:47</a></div>
                                 </td>
                             </tr>
     
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-description"><p>refers to content children of PixiSpriteComponent in PixiContainerComponent</p>
+    </div>
+                        </td>
+                    </tr>
     
                 </tbody>
             </table>
@@ -771,10 +782,16 @@
                         </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/app/pixi-container/pixi-container.component.ts:50</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/app/pixi-container/pixi-container.component.ts:58</a></div>
                                 </td>
                             </tr>
     
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-description"><p>refers to content children of PixiTextComponent in PixiContainerComponent</p>
+    </div>
+                        </td>
+                    </tr>
     
                 </tbody>
             </table>
@@ -791,11 +808,10 @@ import { PixiGraphicsWrapperComponent } from &#x27;../pixi-graphicswrapper/pixi-
 import { PixiTextComponent } from &#x27;../pixi-text/pixi-text.component&#x27;;
 import { PixiApplicationComponent } from &#x27;../pixi-application/pixi-application.component&#x27;;
 
-/** 
- * reference to PIXI.Container
- * {@link http://www.yahoo.com.hk}
- * { @link http://pixijs.download/dev/docs/PIXI.Container.html PIXI.Container }
-*/
+/**
+ * inherits PIXI.Container
+ * {@link http://pixijs.download/dev/docs/PIXI.Container.html PIXI.Container}
+ */
 @Component({
     selector: &#x27;pixi-container&#x27;,
     templateUrl: &#x27;./pixi-container.component.html&#x27;,
@@ -812,7 +828,7 @@ import { PixiApplicationComponent } from &#x27;../pixi-application/pixi-applicat
         &#x27;filters&#x27;,
         &#x27;height&#x27;,
         &#x27;hitArea&#x27;,
-        &#x27; interactive&#x27;,
+        &#x27;interactive&#x27;,
         &#x27;interactiveChildren&#x27;,
         &#x27;mask&#x27;,
         &#x27;name&#x27;,
@@ -828,11 +844,20 @@ import { PixiApplicationComponent } from &#x27;../pixi-application/pixi-applicat
     ]
 })
 export class PixiContainerComponent extends PIXI.Container implements AfterContentInit {
+    /**
+     * refers to content children of PixiSpriteComponent in PixiContainerComponent
+     */
     @ContentChildren(PixiSpriteComponent) sprites: QueryList&lt;PixiSpriteComponent&gt;;
 
+    /**
+     * refers to content children of PixiGraphicsWrapperComponent in PixiContainerComponent
+     */
     @ContentChildren(PixiGraphicsWrapperComponent)
     graphicswrappers: QueryList&lt;PixiGraphicsWrapperComponent&gt;;
 
+    /**
+     * refers to content children of PixiTextComponent in PixiContainerComponent
+     */
     @ContentChildren(PixiTextComponent) texts: QueryList&lt;PixiTextComponent&gt;;
 
     constructor() {

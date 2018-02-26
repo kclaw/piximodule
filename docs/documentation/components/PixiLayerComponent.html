@@ -483,14 +483,15 @@
     <code>src/app/pixi-layer/pixi-layer.component.ts</code>
 </p>
 
-
-
     <p class="comment">
-        <h3>Implements</h3>
+        <h3>Description</h3>
     </p>
     <p class="comment">
-                <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+        <p>responsible for layering in template-pixi stack</p>
+
     </p>
+
+
 
 
 <section>
@@ -552,20 +553,6 @@
                 </tr>
                 <tr>
                     <td class="col-md-4">
-                        <h6><b>Methods</b></h6>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <ul class="index-list">
-                            <li>
-                                <a href="#ngOnInit">ngOnInit</a>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
                         <h6><b>HostBindings</b></h6>
                     </td>
                 </tr>
@@ -593,7 +580,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/app/pixi-layer/pixi-layer.component.ts:9</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/pixi-layer/pixi-layer.component.ts:16</a></div>
                                 </td>
                             </tr>
     
@@ -661,59 +648,23 @@
                         </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/app/pixi-layer/pixi-layer.component.ts:9</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/pixi-layer/pixi-layer.component.ts:16</a></div>
                                 </td>
                             </tr>
     
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-description"><p>variable for specifying the stack order of PixiLayerComponent
+    {@link <a href="https://www.w3schools.com/cssref/pr_pos_z-index.asp">https://www.w3schools.com/cssref/pr_pos_z-index.asp</a> CSS z-index Property}</p>
+    </div>
+                        </td>
+                    </tr>
     
                 </tbody>
             </table>
     </section>
 
 
-    <section>
-        
-            <h3 id="methods">
-                Methods
-            </h3>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <a name="ngOnInit"></a>
-                            <span class="name">
-                                <b>
-                                ngOnInit
-                                </b>
-                                <a href="#ngOnInit"><span class="fa fa-link"></span></a>
-                            </span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-    <code>ngOnInit()</code>
-                        </td>
-                    </tr>
-    
-    
-                            <tr>
-                                <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/pixi-layer/pixi-layer.component.ts:13</a></div>
-                                </td>
-                            </tr>
-    
-                    <tr>
-                        <td class="col-md-4">
-    
-                                <div class="io-description">
-                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
-    
-                                </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-    </section>
 
     <section>
         
@@ -748,7 +699,7 @@
                         </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/pixi-layer/pixi-layer.component.ts:11</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/pixi-layer/pixi-layer.component.ts:18</a></div>
                                 </td>
                             </tr>
     
@@ -761,21 +712,24 @@
 
 
     <div class="tab-pane fade tab-source-code" id="c-source">
-        <pre class="line-numbers"><code class="language-typescript">import { Component, Input, OnInit, ViewContainerRef, HostBinding } from &#x27;@angular/core&#x27;;
+        <pre class="line-numbers"><code class="language-typescript">import { Component, Input, ViewContainerRef, HostBinding } from &#x27;@angular/core&#x27;;
 
+/**
+ * responsible for layering in template-pixi stack
+ */
 @Component({
     selector: &#x27;pixi-layer&#x27;,
     templateUrl: &#x27;./pixi-layer.component.html&#x27;,
     styleUrls: [&#x27;./pixi-layer.component.css&#x27;]
 })
-export class PixiLayerComponent implements OnInit {
+export class PixiLayerComponent {
+    /**
+     * variable for specifying the stack order of PixiLayerComponent
+     * {@link https://www.w3schools.com/cssref/pr_pos_z-index.asp CSS z-index Property}
+     */
     @HostBinding(&#x27;style.z-index&#x27;) zindex: number;
 
     constructor(public vcr: ViewContainerRef) {}
-
-    ngOnInit() {
-        //this.vcr.element.nativeElement.style &#x3D; &#x27;width: 100%; height: 100%&#x27;;
-    }
 }
 </code></pre>
     </div>

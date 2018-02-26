@@ -2,9 +2,9 @@ import { Component, OnInit, AfterContentInit, ContentChildren, QueryList } from 
 import { PixiGraphicsComponent } from '../pixi-graphics/pixi-graphics.component';
 import { PixiGraphicsWrapper } from './pixi-graphicswrapper';
 
-/** 
- * responsible for controlling creation of graphics 
-*/
+/**
+ * responsible for controlling creation of graphics
+ */
 @Component({
     selector: 'pixi-graphicswrapper',
     templateUrl: './pixi-graphicswrapper.component.html',

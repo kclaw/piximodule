@@ -1,8 +1,8 @@
 import { Component, Input, ViewContainerRef, HostBinding } from '@angular/core';
 
-/** 
+/**
  * responsible for layering in template-pixi stack
-*/
+ */
 @Component({
     selector: 'pixi-layer',
     templateUrl: './pixi-layer.component.html',
@@ -16,5 +16,4 @@ export class PixiLayerComponent {
     @HostBinding('style.z-index') zindex: number;
 
     constructor(public vcr: ViewContainerRef) {}
-
 }

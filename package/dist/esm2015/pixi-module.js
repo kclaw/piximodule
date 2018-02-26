@@ -6,6 +6,10 @@ import { CommonModule } from '@angular/common';
  * @fileoverview added by tsickle
  * @suppress {checkTypes} checked by tsc
  */
+/**
+ * have reference and delegation of PIXI.Application
+ * {\@link http://pixijs.download/dev/docs/PIXI.Application.html PIXI.Application}
+ */
 class PixiApplicationComponent {
     /**
      * @param {?} vcr
@@ -53,6 +57,10 @@ PixiApplicationComponent.ctorParameters = () => [
  * @fileoverview added by tsickle
  * @suppress {checkTypes} checked by tsc
  */
+/**
+ * inherits PIXI.Sprite
+ * {\@link http://pixijs.download/dev/docs/PIXI.Sprite.html PIXI.Sprite}
+ */
 class PixiSpriteComponent extends PIXI.Sprite {
     constructor() {
         super();
@@ -88,7 +96,7 @@ PixiSpriteComponent.decorators = [
                     'filters',
                     'height',
                     'hitArea',
-                    ' interactive',
+                    'interactive',
                     'interactiveChildren',
                     'mask',
                     'name',
@@ -114,18 +122,15 @@ PixiSpriteComponent.propDecorators = {
  * @fileoverview added by tsickle
  * @suppress {checkTypes} checked by tsc
  */
+/**
+ * responsible for layering in template-pixi stack
+ */
 class PixiLayerComponent {
     /**
      * @param {?} vcr
      */
     constructor(vcr) {
         this.vcr = vcr;
-    }
-    /**
-     * @return {?}
-     */
-    ngOnInit() {
-        //this.vcr.element.nativeElement.style = 'width: 100%; height: 100%';
     }
 }
 PixiLayerComponent.decorators = [
@@ -149,6 +154,10 @@ PixiLayerComponent.propDecorators = {
 /**
  * @fileoverview added by tsickle
  * @suppress {checkTypes} checked by tsc
+ */
+/**
+ * inherits PIXI.Graphics
+ * {\@link http://pixijs.download/dev/docs/PIXI.Graphics.html PIXI.Graphics}
  */
 class PixiGraphicsComponent extends PIXI.Graphics {
     constructor() {
@@ -184,7 +193,7 @@ PixiGraphicsComponent.decorators = [
                     'filters',
                     'height',
                     'hitArea',
-                    ' interactive',
+                    'interactive',
                     'interactiveChildren',
                     'mask',
                     'name',
@@ -207,6 +216,9 @@ PixiGraphicsComponent.ctorParameters = () => [];
  * @fileoverview added by tsickle
  * @suppress {checkTypes} checked by tsc
  */
+/**
+ * responsible for controlling creation of graphics
+ */
 class PixiGraphicsWrapperComponent {
     constructor() { }
     /**
@@ -217,8 +229,8 @@ class PixiGraphicsWrapperComponent {
      * @return {?}
      */
     ngAfterContentInit() {
-        this.graphicslist.forEach(e => {
-            this.apply(e.name, e);
+        this.graphicslist.forEach(graphics => {
+            this.apply(graphics.name, graphics);
         });
     }
     /**
@@ -249,16 +261,12 @@ PixiGraphicsWrapperComponent.propDecorators = {
  * @fileoverview added by tsickle
  * @suppress {checkTypes} checked by tsc
  */
+/**
+ * inherits PIXI.Text
+ */
 class PixiTextComponent extends PIXI.Text {
     constructor() {
         super();
-    }
-    /**
-     * @return {?}
-     */
-    ngOnInit() {
-        //let obj:Object = JSON.parse(this.stylestring);
-        // this.style = new PIXI.TextStyle(obj);
     }
 }
 PixiTextComponent.decorators = [
@@ -287,7 +295,7 @@ PixiTextComponent.decorators = [
                     'filters',
                     'height',
                     'hitArea',
-                    ' interactive',
+                    'interactive',
                     'interactiveChildren',
                     'mask',
                     'name',
@@ -309,6 +317,10 @@ PixiTextComponent.ctorParameters = () => [];
 /**
  * @fileoverview added by tsickle
  * @suppress {checkTypes} checked by tsc
+ */
+/**
+ * inherits PIXI.Container
+ * {\@link http://pixijs.download/dev/docs/PIXI.Container.html PIXI.Container}
  */
 class PixiContainerComponent extends PIXI.Container {
     constructor() {
@@ -352,7 +364,7 @@ PixiContainerComponent.decorators = [
                     'filters',
                     'height',
                     'hitArea',
-                    ' interactive',
+                    'interactive',
                     'interactiveChildren',
                     'mask',
                     'name',
@@ -379,6 +391,10 @@ PixiContainerComponent.propDecorators = {
 /**
  * @fileoverview added by tsickle
  * @suppress {checkTypes} checked by tsc
+ */
+/**
+ * responsible for initialization of PixiApplicationComponent
+ * in creation of template-pixi stack
  */
 class PixiInitializerDirective {
     /**
@@ -483,6 +499,10 @@ PixiInitializerDirective.propDecorators = {
  * @fileoverview added by tsickle
  * @suppress {checkTypes} checked by tsc
  */
+/**
+ * responsible for initialization of PixiApplicationComponent
+ * in creation of template-pixi stack (pixi-block)
+ */
 class PixiInitializerComponent extends PixiInitializerDirective {
     /**
      * @param {?} vcr
@@ -499,9 +519,7 @@ class PixiInitializerComponent extends PixiInitializerDirective {
 PixiInitializerComponent.decorators = [
     { type: Component, args: [{
                 selector: 'pixi-initializer',
-                template: `<div>
-    for testing purpose
-</div>`,
+                template: `This sentence should not display in browser window. from PIXIInitailizerComponent`,
                 styles: [`
 `]
             },] },

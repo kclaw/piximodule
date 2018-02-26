@@ -15,7 +15,7 @@ By benefiting from Angular dynamic component, developer can have dynamic-dimensi
 
 user can imagine a block element which contains two layers. One layer named to angular-template-layer contains elements of Angular template  and another layer named to pixi-layer contains PIXI elements.
 
-### Overlapped Template-Pixi Layers Layout
+### Overlapped Template-Pixi Stack
 
 let we name a block with two layers aforementioned as PIXI block.
 Each PIXI block will be allocated with dimension by user agent according to rules.
@@ -24,10 +24,12 @@ Child element(s) of PIXI block determines dimension of PIXI block.
 
 ```
 <pixi-block>
-    <angular-template-layer>
-        <child-element class="A"></child-element>
-        <child-element class="B"></child-element>
-    </angular-template>
+    <pixi-layer>
+        <angular-template>
+            <child-element class="A"></child-element>
+            <child-element class="B"></child-element>
+        </angular-template>
+    </pixi-layer>
     <pixi-layer>
         ...
         <pixi-element></pixi-element>
@@ -39,10 +41,6 @@ Child element(s) of PIXI block determines dimension of PIXI block.
 According to styling of Child elements, for example,
 
 ```
-child-element {
-    display: block;
-}
-
 .A {
     width: 400px;
     height: 700px;
@@ -251,7 +249,7 @@ In usual case, angular cli helps to generate those Component related files
     > ./docs/documentation
     > ./docs/typedoc
     > example codes
-    > /src/examples
+    > ./src/examples
 
 
 
@@ -271,10 +269,21 @@ In usual case, angular cli helps to generate those Component related files
 - [x] provides examples
 
 ## 1.0.0-beta.2 
-- [x] uses Angular Directive instead of class inheritance
+- [x] introduces Angular Directive coexists with Angular       Component class inheritance
     - [x] PixiInitializerComponent
+    - [ ] PixiGraphicsWrapperComponent
 - [ ] introduces Responsive on pixi application
-
+- [ ] introduces interface on component
+- [ ] improves/enriches examples/use cases
+- [ ] documents more on components
+    - [ ] PixiApplicationComponent
+    - [ ] PixiInitializerComponent
+    - [ ] PixiGraphicsWrapperComponent
+    - [ ] PixiGraphicsComponent
+    - [ ] PixiLayerComponent
+    - [ ] PixiSpriteComponent
+    - [ ] PixiTextComponent
+- [ ] introduces PixiAnimatedSpriteComponent
 - - -
 # Reference
 name       |link

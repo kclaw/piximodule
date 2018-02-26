@@ -92,7 +92,7 @@ PixiSpriteComponent.decorators = [
                     'filters',
                     'height',
                     'hitArea',
-                    ' interactive',
+                    'interactive',
                     'interactiveChildren',
                     'mask',
                     'name',
@@ -116,8 +116,6 @@ var PixiLayerComponent = /** @class */ (function () {
     function PixiLayerComponent(vcr) {
         this.vcr = vcr;
     }
-    PixiLayerComponent.prototype.ngOnInit = function () {
-    };
     return PixiLayerComponent;
 }());
 PixiLayerComponent.decorators = [
@@ -165,7 +163,7 @@ PixiGraphicsComponent.decorators = [
                     'filters',
                     'height',
                     'hitArea',
-                    ' interactive',
+                    'interactive',
                     'interactiveChildren',
                     'mask',
                     'name',
@@ -188,8 +186,8 @@ var PixiGraphicsWrapperComponent = /** @class */ (function () {
     PixiGraphicsWrapperComponent.prototype.ngOnInit = function () { };
     PixiGraphicsWrapperComponent.prototype.ngAfterContentInit = function () {
         var _this = this;
-        this.graphicslist.forEach(function (e) {
-            _this.apply(e.name, e);
+        this.graphicslist.forEach(function (graphics) {
+            _this.apply(graphics.name, graphics);
         });
     };
     PixiGraphicsWrapperComponent.prototype.apply = function (name, graphics) { };
@@ -211,8 +209,6 @@ var PixiTextComponent = /** @class */ (function (_super) {
     function PixiTextComponent() {
         return _super.call(this) || this;
     }
-    PixiTextComponent.prototype.ngOnInit = function () {
-    };
     return PixiTextComponent;
 }(PIXI.Text));
 PixiTextComponent.decorators = [
@@ -237,7 +233,7 @@ PixiTextComponent.decorators = [
                     'filters',
                     'height',
                     'hitArea',
-                    ' interactive',
+                    'interactive',
                     'interactiveChildren',
                     'mask',
                     'name',
@@ -292,7 +288,7 @@ PixiContainerComponent.decorators = [
                     'filters',
                     'height',
                     'hitArea',
-                    ' interactive',
+                    'interactive',
                     'interactiveChildren',
                     'mask',
                     'name',
@@ -404,7 +400,7 @@ var PixiInitializerComponent = /** @class */ (function (_super) {
 PixiInitializerComponent.decorators = [
     { type: core.Component, args: [{
                 selector: 'pixi-initializer',
-                template: "<div>\n    for testing purpose\n</div>",
+                template: "This sentence should not display in browser window. from PIXIInitailizerComponent",
                 styles: ["\n"]
             },] },
 ];

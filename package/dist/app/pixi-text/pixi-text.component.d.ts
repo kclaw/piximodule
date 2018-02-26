@@ -1,6 +1,7 @@
 /// <reference types="pixi.js" />
-import { OnInit } from '@angular/core';
-export declare class PixiTextComponent extends PIXI.Text implements OnInit {
+/**
+ * inherits PIXI.Text
+ */
+export declare class PixiTextComponent extends PIXI.Text {
     constructor();
-    ngOnInit(): void;
 }

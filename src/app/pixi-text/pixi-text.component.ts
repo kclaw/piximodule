@@ -1,8 +1,8 @@
 import { Component, Input } from '@angular/core';
 
-/** 
+/**
  * inherits PIXI.Text
-*/
+ */
 @Component({
     selector: 'pixi-text',
     templateUrl: './pixi-text.component.html',
