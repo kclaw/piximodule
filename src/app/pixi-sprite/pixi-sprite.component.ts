@@ -1,6 +1,10 @@
 import { Component, OnInit, Input } from '@angular/core';
 import 'pixi.js';
 
+/** 
+ * inherits PIXI.Sprite
+ * {@link http://pixijs.download/dev/docs/PIXI.Sprite.html PIXI.Sprite}
+*/
 @Component({
     selector: 'pixi-sprite',
     templateUrl: './pixi-sprite.component.html',
@@ -19,7 +23,7 @@ import 'pixi.js';
         'filters',
         'height',
         'hitArea',
-        ' interactive',
+        'interactive',
         'interactiveChildren',
         'mask',
         'name',
@@ -35,6 +39,10 @@ import 'pixi.js';
     ]
 })
 export class PixiSpriteComponent extends PIXI.Sprite implements OnInit {
+    /**
+     * input for url of image, and
+     * is presented to replace function of static fromImage method 
+     */
     @Input() fromImageUrl: string;
 
     constructor() {

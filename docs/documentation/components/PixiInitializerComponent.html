@@ -486,6 +486,14 @@
     <code>src/app/pixi-initializer/pixi-initializer.component.ts</code>
 </p>
 
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>responsible for initialization of PixiApplicationComponent
+in creation of template-pixi stack (pixi-block)</p>
+
+    </p>
 
     <p class="comment">
         <h3>Extends</h3>
@@ -552,7 +560,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/pixi-initializer/pixi-initializer.component.ts:24</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/pixi-initializer/pixi-initializer.component.ts:28</a></div>
                                 </td>
                             </tr>
     
@@ -642,6 +650,10 @@ import { PixiTextComponent } from &#x27;../pixi-text/pixi-text.component&#x27;;
 import &#x27;pixi.js&#x27;;
 import { PixiInitializerDirective } from &#x27;./pixi-initializer.directive&#x27;;
 
+/** 
+ * responsible for initialization of PixiApplicationComponent
+ * in creation of template-pixi stack (pixi-block)
+*/
 @Component({
     selector: &#x27;pixi-initializer&#x27;,
     templateUrl: &#x27;./pixi-initializer.component.html&#x27;,
@@ -660,9 +672,7 @@ export class PixiInitializerComponent extends PixiInitializerDirective implement
     </div>
 
     <div class="tab-pane fade" id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;div&gt;
-    for testing purpose
-&lt;/div&gt;</code></pre>
+        <pre class="line-numbers"><code class="language-html">This sentence should not display in browser window. from PIXIInitailizerComponent</code></pre>
     </div>
 
     <div class="tab-pane fade" id="c-tree">
@@ -688,7 +698,7 @@ export class PixiInitializerComponent extends PixiInitializerDirective implement
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div>    for testing purpose</div></div>'
+        var COMPONENT_TEMPLATE = '<div>This sentence should not display in browser window. from PIXIInitailizerComponent</div>'
     var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'Example1Component', 'selector': 'example1'},{'name': 'Example2Component', 'selector': 'example2'},{'name': 'Example3Component', 'selector': 'example3'},{'name': 'Example4Component', 'selector': 'example4'},{'name': 'Example5Component', 'selector': 'example5'},{'name': 'Example6Component', 'selector': 'example6'},{'name': 'ExampleGraphicswrapperComponent', 'selector': 'example-graphicswrapper'},{'name': 'PixiApplicationComponent', 'selector': 'pixi-application'},{'name': 'PixiContainerComponent', 'selector': 'pixi-container'},{'name': 'PixiGraphicsComponent', 'selector': 'pixi-graphics'},{'name': 'PixiGraphicsWrapperComponent', 'selector': 'pixi-graphicswrapper'},{'name': 'PixiInitializerComponent', 'selector': 'pixi-initializer'},{'name': 'PixiLayerComponent', 'selector': 'pixi-layer'},{'name': 'PixiSpriteComponent', 'selector': 'pixi-sprite'},{'name': 'PixiTextComponent', 'selector': 'pixi-text'}];
     var DIRECTIVES = [{'name': 'PixiGraphicswrapperDirective', 'selector': '[pixi-graphicswrapper]'},{'name': 'PixiInitializerDirective', 'selector': '[pixi-initializer]'}];
     var ACTUAL_COMPONENT = {'name': 'PixiInitializerComponent'};

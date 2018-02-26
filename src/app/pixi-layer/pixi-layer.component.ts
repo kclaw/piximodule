@@ -1,16 +1,20 @@
-import { Component, Input, OnInit, ViewContainerRef, HostBinding } from '@angular/core';
+import { Component, Input, ViewContainerRef, HostBinding } from '@angular/core';
 
+/** 
+ * responsible for layering in template-pixi stack
+*/
 @Component({
     selector: 'pixi-layer',
     templateUrl: './pixi-layer.component.html',
     styleUrls: ['./pixi-layer.component.css']
 })
-export class PixiLayerComponent implements OnInit {
+export class PixiLayerComponent {
+    /**
+     * variable for specifying the stack order of PixiLayerComponent
+     * {@link https://www.w3schools.com/cssref/pr_pos_z-index.asp CSS z-index Property}
+     */
     @HostBinding('style.z-index') zindex: number;
 
     constructor(public vcr: ViewContainerRef) {}
 
-    ngOnInit() {
-        //this.vcr.element.nativeElement.style = 'width: 100%; height: 100%';
-    }
 }

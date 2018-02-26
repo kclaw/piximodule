@@ -13,19 +13,54 @@ import { PixiContainerComponent } from '../pixi-container/pixi-container.compone
 import { PixiTextComponent } from '../pixi-text/pixi-text.component';
 import { PixiGraphicsWrapperComponent } from '../pixi-graphicswrapper/pixi-graphicswrapper.component';
 
+/** 
+ * have reference and delegation of PIXI.Application
+ * {@link http://pixijs.download/dev/docs/PIXI.Application.html PIXI.Application}
+*/
 @Component({
     selector: 'pixi-application',
     templateUrl: './pixi-application.component.html',
     styleUrls: ['./pixi-application.component.css']
 })
 export class PixiApplicationComponent implements OnInit {
+    /**
+     * refers to width of PIXI.Application
+     */
     width: number;
+
+    /**
+     * refers to height of PIXI.Application
+     */
     height: number;
+
+    /**
+     * refers to instance of PIXI.Application
+     */
     application: PIXI.Application;
+
+    /**
+     * refers to options parameter given to constructor of PIXI.Application
+     */
     options: PIXI.ApplicationOptions;
+
+    /**
+     * refers to PixiSpriteComponent going to be registered in PIXI.Application
+     */
     sprites: QueryList<PixiSpriteComponent>;
+
+    /**
+     * refers to PixiTextComponent going to be registered in PIXI.Application
+     */
     texts: QueryList<PixiTextComponent>;
+
+    /**
+     * refers to PixiContainerComponent going to be registered in PIXI.Application
+     */
     containers: QueryList<PixiContainerComponent>;
+
+    /**
+     * refers to PixiGraphicsWrapper going to be registered in PIXI.Application
+     */
     graphicswrappers: QueryList<PixiGraphicsWrapperComponent>;
 
     constructor(public vcr: ViewContainerRef) {}

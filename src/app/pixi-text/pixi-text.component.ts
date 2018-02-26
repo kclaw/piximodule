@@ -1,5 +1,8 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
+/** 
+ * inherits PIXI.Text
+*/
 @Component({
     selector: 'pixi-text',
     templateUrl: './pixi-text.component.html',
@@ -21,7 +24,7 @@ import { Component, OnInit, Input } from '@angular/core';
         'filters',
         'height',
         'hitArea',
-        ' interactive',
+        'interactive',
         'interactiveChildren',
         'mask',
         'name',
@@ -36,16 +39,8 @@ import { Component, OnInit, Input } from '@angular/core';
         'width'
     ]
 })
-export class PixiTextComponent extends PIXI.Text implements OnInit {
-    //@Input()
-    //stylestring: string = '{"stroke":"white","fill":"white"}';
-
+export class PixiTextComponent extends PIXI.Text {
     constructor() {
         super();
-    }
-
-    ngOnInit() {
-        //let obj:Object = JSON.parse(this.stylestring);
-        // this.style = new PIXI.TextStyle(obj);
     }
 }

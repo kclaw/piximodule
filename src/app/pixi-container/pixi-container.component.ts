@@ -5,6 +5,10 @@ import { PixiGraphicsWrapperComponent } from '../pixi-graphicswrapper/pixi-graph
 import { PixiTextComponent } from '../pixi-text/pixi-text.component';
 import { PixiApplicationComponent } from '../pixi-application/pixi-application.component';
 
+/** 
+ * inherits PIXI.Container
+ * {@link http://pixijs.download/dev/docs/PIXI.Container.html PIXI.Container}
+*/
 @Component({
     selector: 'pixi-container',
     templateUrl: './pixi-container.component.html',
@@ -21,7 +25,7 @@ import { PixiApplicationComponent } from '../pixi-application/pixi-application.c
         'filters',
         'height',
         'hitArea',
-        ' interactive',
+        'interactive',
         'interactiveChildren',
         'mask',
         'name',
@@ -37,11 +41,20 @@ import { PixiApplicationComponent } from '../pixi-application/pixi-application.c
     ]
 })
 export class PixiContainerComponent extends PIXI.Container implements AfterContentInit {
+    /**
+     * refers to content children of PixiSpriteComponent in PixiContainerComponent
+     */
     @ContentChildren(PixiSpriteComponent) sprites: QueryList<PixiSpriteComponent>;
 
+    /**
+     * refers to content children of PixiGraphicsWrapperComponent in PixiContainerComponent
+     */
     @ContentChildren(PixiGraphicsWrapperComponent)
     graphicswrappers: QueryList<PixiGraphicsWrapperComponent>;
 
+    /**
+     * refers to content children of PixiTextComponent in PixiContainerComponent
+     */
     @ContentChildren(PixiTextComponent) texts: QueryList<PixiTextComponent>;
 
     constructor() {

@@ -1,5 +1,9 @@
 import { Component, Input } from '@angular/core';
 
+/** 
+ * inherits PIXI.Graphics
+ * {@link http://pixijs.download/dev/docs/PIXI.Graphics.html PIXI.Graphics}
+*/
 @Component({
     selector: 'pixi-graphics',
     templateUrl: './pixi-graphics.component.html',
@@ -24,7 +28,7 @@ import { Component, Input } from '@angular/core';
         'filters',
         'height',
         'hitArea',
-        ' interactive',
+        'interactive',
         'interactiveChildren',
         'mask',
         'name',

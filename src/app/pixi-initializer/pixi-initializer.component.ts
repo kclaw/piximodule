@@ -16,6 +16,10 @@ import { PixiTextComponent } from '../pixi-text/pixi-text.component';
 import 'pixi.js';
 import { PixiInitializerDirective } from './pixi-initializer.directive';
 
+/** 
+ * responsible for initialization of PixiApplicationComponent
+ * in creation of template-pixi stack (pixi-block)
+*/
 @Component({
     selector: 'pixi-initializer',
     templateUrl: './pixi-initializer.component.html',

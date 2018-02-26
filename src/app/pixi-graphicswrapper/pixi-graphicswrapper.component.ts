@@ -2,12 +2,18 @@ import { Component, OnInit, AfterContentInit, ContentChildren, QueryList } from 
 import { PixiGraphicsComponent } from '../pixi-graphics/pixi-graphics.component';
 import { PixiGraphicsWrapper } from './pixi-graphicswrapper';
 
+/** 
+ * responsible for controlling creation of graphics 
+*/
 @Component({
     selector: 'pixi-graphicswrapper',
     templateUrl: './pixi-graphicswrapper.component.html',
     styleUrls: ['./pixi-graphicswrapper.component.css']
 })
 export class PixiGraphicsWrapperComponent implements OnInit, AfterContentInit, PixiGraphicsWrapper {
+    /**
+     * refers to content children of PixiGraphicsComponent in PixiGraphicsWrapperComponent
+     */
     @ContentChildren(PixiGraphicsComponent) graphicslist: QueryList<PixiGraphicsComponent>;
 
     constructor() {}
@@ -15,8 +21,8 @@ export class PixiGraphicsWrapperComponent implements OnInit, AfterContentInit, P
     ngOnInit() {}
 
     ngAfterContentInit(): void {
-        this.graphicslist.forEach(e => {
-            this.apply(e.name, e);
+        this.graphicslist.forEach(graphics => {
+            this.apply(graphics.name, graphics);
         });
     }
 

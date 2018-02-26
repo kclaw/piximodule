@@ -464,26 +464,24 @@ reusable component for other project and is designed with high  adaptability on 
 <p>Originally, PIXI module requires dimensions to intialise a canvas.
 By benefiting from Angular dynamic component, developer can have dynamic-dimensiional canvas without given dimensions.</p>
 <p>user can imagine a block element which contains two layers. One layer named to angular-template-layer contains elements of Angular template  and another layer named to pixi-layer contains PIXI elements.</p>
-<h3 id="overlapped-template-pixi-layers-layout">Overlapped Template-Pixi Layers Layout</h3>
+<h3 id="overlapped-template-pixi-stack">Overlapped Template-Pixi Stack</h3>
 <p>let we name a block with two layers aforementioned as PIXI block.
 Each PIXI block will be allocated with dimension by user agent according to rules.</p>
 <p>Child element(s) of PIXI block determines dimension of PIXI block.</p>
 <pre class="line-numbers"><code class="language-none">&lt;pixi-block&gt;
-    &lt;angular-template-layer&gt;
-        &lt;child-element class=&quot;A&quot;&gt;&lt;/child-element&gt;
-        &lt;child-element class=&quot;B&quot;&gt;&lt;/child-element&gt;
-    &lt;/angular-template&gt;
+    &lt;pixi-layer&gt;
+        &lt;angular-template&gt;
+            &lt;child-element class=&quot;A&quot;&gt;&lt;/child-element&gt;
+            &lt;child-element class=&quot;B&quot;&gt;&lt;/child-element&gt;
+        &lt;/angular-template&gt;
+    &lt;/pixi-layer&gt;
     &lt;pixi-layer&gt;
         ...
         &lt;pixi-element&gt;&lt;/pixi-element&gt;
         ...
     &lt;/pixi-layer&gt;
 &lt;/pixi-block&gt;</code></pre><p>According to styling of Child elements, for example,</p>
-<pre class="line-numbers"><code class="language-none">child-element {
-    display: block;
-}
-
-.A {
+<pre class="line-numbers"><code class="language-none">.A {
     width: 400px;
     height: 700px;
 }
@@ -651,7 +649,7 @@ import * from &#39;pixi-module&#39;;
 &gt; ./docs/documentation
 &gt; ./docs/typedoc
 &gt; example codes
-&gt; /src/examples</code></pre><h1 id="change-log">Change log</h1>
+&gt; ./src/examples</code></pre><h1 id="change-log">Change log</h1>
 <h2 id="1-0-0-beta-1-current-">1.0.0-beta.1 (current)</h2>
 <ul>
 <li>[x] introduces PixiApplicationComponent</li>
@@ -669,11 +667,25 @@ import * from &#39;pixi-module&#39;;
 </ul>
 <h2 id="1-0-0-beta-2">1.0.0-beta.2</h2>
 <ul>
-<li>[x] uses Angular Directive instead of class inheritance<ul>
+<li>[x] introduces Angular Directive coexists with Angular       Component class inheritance<ul>
 <li>[x] PixiInitializerComponent</li>
+<li>[ ] PixiGraphicsWrapperComponent</li>
 </ul>
 </li>
 <li>[ ] introduces Responsive on pixi application</li>
+<li>[ ] introduces interface on component</li>
+<li>[ ] improves/enriches examples/use cases</li>
+<li>[ ] documents more on components<ul>
+<li>[ ] PixiApplicationComponent</li>
+<li>[ ] PixiInitializerComponent</li>
+<li>[ ] PixiGraphicsWrapperComponent</li>
+<li>[ ] PixiGraphicsComponent</li>
+<li>[ ] PixiLayerComponent</li>
+<li>[ ] PixiSpriteComponent</li>
+<li>[ ] PixiTextComponent</li>
+</ul>
+</li>
+<li>[ ] introduces PixiAnimatedSpriteComponent</li>
 </ul>
 <hr>
 <h1 id="reference">Reference</h1>
