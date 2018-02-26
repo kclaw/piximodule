@@ -14,5 +14,4 @@ packages:
 before_script:
   - npm install -g @angular/cli
   - ng build
-    
 script: ng test --single-run
