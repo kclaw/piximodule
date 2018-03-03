@@ -19,12 +19,13 @@ user can imagine a block element which contains two layers. One layer named to a
 
 ```
 ============
-|          |
-|   Pixi  ============
-|         |          |
-==========| Template |
-          |          |
-          ============
+|          |                       ============
+|   Pixi  ============             |   Pixi   |
+|         |          |    =>       ============         
+==========| Template |             |          | 
+          |          |             | Template | 
+          ============             |          |
+                                   ============
 ```
 
 let we name a block with two layers aforementioned as PIXI block.
