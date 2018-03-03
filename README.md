@@ -17,6 +17,7 @@ user can imagine a block element which contains two layers. One layer named to a
 
 ### Overlapped Template-Pixi Stack
 
+```
 =========
 |       |
 |   T  =========
@@ -24,6 +25,7 @@ user can imagine a block element which contains two layers. One layer named to a
 ====== |  Pixi |
        |       |
        =========
+```
 
 let we name a block with two layers aforementioned as PIXI block.
 Each PIXI block will be allocated with dimension by user agent according to rules.
