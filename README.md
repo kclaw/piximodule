@@ -19,8 +19,8 @@ user can imagine a block element which contains two layers. One layer named to a
 
 ```
 ============
-|          |                       ============
-|   Pixi  ============             |   Pixi   |
+|          |                        ============
+|   Pixi  ============              |   Pixi   |
 |         |          |    =>       ============         
 ==========| Template |             |          | 
           |          |             | Template | 
