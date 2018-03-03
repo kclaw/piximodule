@@ -17,6 +17,14 @@ user can imagine a block element which contains two layers. One layer named to a
 
 ### Overlapped Template-Pixi Stack
 
+=========
+|       |
+|   T  =========
+|      |       |
+====== |  Pixi |
+       |       |
+       =========
+
 let we name a block with two layers aforementioned as PIXI block.
 Each PIXI block will be allocated with dimension by user agent according to rules.
 
@@ -158,7 +166,11 @@ In usual case, angular cli helps to generate those Component related files
 # Use Case
 
 ## example1
-
+> this example demonstrates how to use
+> pixi-container
+> pixi-text in pixi-container
+> pixi-text outside pixi-container but inside subclass of PixiInitializerComponent
+>
 1. extends PixiInitializerComponent (example.component.ts)
 2. replace 
    `constructor()` instead of `constructor(protected vcr: ViewContainerRef, protected cfr: ComponentFactoryResolver, protected r: Renderer2) { super(vcr, cfr, r); }` (example.component.ts)
@@ -188,7 +200,7 @@ In usual case, angular cli helps to generate those Component related files
     ``` 
     (app.component.html)
 
-4. paste a function 
+4. copy and paste following function 
     ```
     textStyle(): PIXI.TextStyle {
         return new PIXI.TextStyle({stroke:'#FCFF00' ,fontFamily : 'Arial', fontSize: 24, fill : 'white', align : 'center'});
@@ -198,7 +210,7 @@ In usual case, angular cli helps to generate those Component related files
 
 ## example2
 
-1. paste
+1. copy and paste following function 
     ```
     <example2 pixi-initializer>
         <pixi-container>
@@ -269,13 +281,13 @@ In usual case, angular cli helps to generate those Component related files
 - [x] provides examples
 
 ## 1.0.0-beta.2 
-- [x] introduces Angular Directive coexists with Angular       Component class inheritance
+- [x] introduces Angular Directive coexists with Angular Component class inheritance
     - [x] PixiInitializerComponent
     - [ ] PixiGraphicsWrapperComponent
 - [ ] introduces Responsive on pixi application
 - [ ] introduces interface on component
 - [ ] improves/enriches examples/use cases
-- [ ] documents more on components
+- [ ] jot down more notes on components
     - [ ] PixiApplicationComponent
     - [ ] PixiInitializerComponent
     - [ ] PixiGraphicsWrapperComponent
@@ -284,6 +296,12 @@ In usual case, angular cli helps to generate those Component related files
     - [ ] PixiSpriteComponent
     - [ ] PixiTextComponent
 - [ ] introduces PixiAnimatedSpriteComponent
+
+## 1.0.1
+- [ ] rename PixiModule
+- [ ] publish to npm
+- [ ] brand-new introduction web page
+
 - - -
 # Reference
 name       |link

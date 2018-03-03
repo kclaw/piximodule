@@ -1,9 +1,9 @@
 import { Component, OnInit, AfterContentInit, ContentChildren, QueryList } from '@angular/core';
 import { PixiGraphicsComponent } from '../pixi-graphics/pixi-graphics.component';
 import { PixiGraphicsWrapper } from './pixi-graphicswrapper';
-
+import { PixiGraphics } from '../pixi-graphics/pixi-graphics';
 /**
- * responsible for controlling creation of graphics
+ * responsible for controlling creation of PIXI graphics
  */
 @Component({
     selector: 'pixi-graphicswrapper',
@@ -11,10 +11,11 @@ import { PixiGraphicsWrapper } from './pixi-graphicswrapper';
     styleUrls: ['./pixi-graphicswrapper.component.css']
 })
 export class PixiGraphicsWrapperComponent implements OnInit, AfterContentInit, PixiGraphicsWrapper {
+
     /**
      * refers to content children of PixiGraphicsComponent in PixiGraphicsWrapperComponent
      */
-    @ContentChildren(PixiGraphicsComponent) graphicslist: QueryList<PixiGraphicsComponent>;
+    @ContentChildren(PixiGraphics) graphicslist: QueryList<PixiGraphics>;
 
     constructor() {}
 
@@ -26,5 +27,11 @@ export class PixiGraphicsWrapperComponent implements OnInit, AfterContentInit, P
         });
     }
 
-    apply(name: string, graphics: PIXI.Graphics) {}
+    apply(name: string, graphics: PIXI.Graphics) {
+        
+    }
+
+    getGraphicsList(): PixiGraphics[] {
+        return this.graphicslist.toArray();
+    }
 }

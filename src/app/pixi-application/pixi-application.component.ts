@@ -12,6 +12,7 @@ import { PixiSpriteComponent } from '../pixi-sprite/pixi-sprite.component';
 import { PixiContainerComponent } from '../pixi-container/pixi-container.component';
 import { PixiTextComponent } from '../pixi-text/pixi-text.component';
 import { PixiGraphicsWrapperComponent } from '../pixi-graphicswrapper/pixi-graphicswrapper.component';
+import { PixiGraphics } from '../pixi-graphics/pixi-graphics';
 
 /**
  * have reference and delegation of PIXI.Application
@@ -63,6 +64,11 @@ export class PixiApplicationComponent implements OnInit {
      */
     graphicswrappers: QueryList<PixiGraphicsWrapperComponent>;
 
+    /**
+     * refers to PixiGraphicsComponent going to be registered in PIXI.Application
+     */
+    graphicslist: QueryList<PixiGraphics>;
+
     constructor(public vcr: ViewContainerRef) {}
 
     ngOnInit() {
@@ -82,6 +88,9 @@ export class PixiApplicationComponent implements OnInit {
             wrapper.graphicslist.forEach(graphics => {
                 this.application.stage.addChild(graphics);
             });
+        });
+        this.graphicslist.forEach(graphics => {
+            this.application.stage.addChild(graphics);
         });
     }
 }

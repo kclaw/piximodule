@@ -9,7 +9,7 @@ import { PixiTextComponent } from '../pixi-text/pixi-text.component';
 import { PixiGraphicsComponent } from '../pixi-graphics/pixi-graphics.component';
 import { PixiGraphicsWrapperComponent } from '../pixi-graphicswrapper/pixi-graphicswrapper.component';
 import { PixiInitializerDirective } from '../pixi-initializer/pixi-initializer.directive';
-import { PixiGraphicswrapperDirective } from '../pixi-graphicswrapper/pixi-graphicswrapper.directive';
+import { PixiGraphicsWrapperDirective } from '../pixi-graphicswrapper/pixi-graphicswrapper.directive';
 
 @NgModule({
     imports: [CommonModule],
@@ -23,7 +23,7 @@ import { PixiGraphicswrapperDirective } from '../pixi-graphicswrapper/pixi-graph
         PixiGraphicsComponent,
         PixiGraphicsWrapperComponent,
         PixiInitializerDirective,
-        PixiGraphicswrapperDirective
+        PixiGraphicsWrapperDirective
     ],
     entryComponents: [PixiApplicationComponent, PixiLayerComponent],
     exports: [
@@ -36,7 +36,7 @@ import { PixiGraphicswrapperDirective } from '../pixi-graphicswrapper/pixi-graph
         PixiGraphicsComponent,
         PixiGraphicsWrapperComponent,
         PixiInitializerDirective,
-        PixiGraphicswrapperDirective
+        PixiGraphicsWrapperDirective
     ]
 })
 export class PixiModule {}

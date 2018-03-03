@@ -14,6 +14,7 @@ import { PixiLayerComponent } from '../pixi-layer/pixi-layer.component';
 import { PixiContainerComponent } from '../pixi-container/pixi-container.component';
 import { PixiGraphicsWrapperComponent } from '../pixi-graphicswrapper/pixi-graphicswrapper.component';
 import { PixiTextComponent } from '../pixi-text/pixi-text.component';
+import { PixiGraphics } from '../pixi-graphics/pixi-graphics';
 
 /**
  * responsible for initialization of PixiApplicationComponent
@@ -37,6 +38,11 @@ export class PixiInitializerDirective {
      * refers to content children with type of PixiGraphicsWrapperComponent in PixiInitializerDirective
      */
     @ContentChildren(PixiGraphicsWrapperComponent) graphicswrappers;
+
+    /**
+     * refers to content children with type of PixiGraphicsComponent in PixiInitializerDirective
+     */
+    @ContentChildren(PixiGraphics) graphicslist;
 
     /**
      * refers to content children with type of PixiTextComponent in PixiInitializerDirective
@@ -69,6 +75,7 @@ export class PixiInitializerDirective {
         (<PixiApplicationComponent>componentRef.instance).containers = this.containers;
         (<PixiApplicationComponent>componentRef.instance).graphicswrappers = this.graphicswrappers;
         (<PixiApplicationComponent>componentRef.instance).texts = this.texts;
+        (<PixiApplicationComponent>componentRef.instance).graphicslist = this.graphicslist;
 
         this.vcr.element.nativeElement.style =
             'display:block;width:' +

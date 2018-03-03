@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, forwardRef } from '@angular/core';
+import { PixiGraphics } from './pixi-graphics';
 
 /**
  * inherits PIXI.Graphics
@@ -41,9 +42,10 @@ import { Component, Input } from '@angular/core';
         'transform',
         'visible',
         'width'
-    ]
+    ],
+    providers: [{provide: PixiGraphics, useExisting: forwardRef(() => PixiGraphicsComponent)}]
 })
-export class PixiGraphicsComponent extends PIXI.Graphics {
+export class PixiGraphicsComponent extends PixiGraphics {
     constructor() {
         super();
     }

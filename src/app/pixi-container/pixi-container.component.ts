@@ -4,6 +4,7 @@ import { PixiSpriteComponent } from '../pixi-sprite/pixi-sprite.component';
 import { PixiGraphicsWrapperComponent } from '../pixi-graphicswrapper/pixi-graphicswrapper.component';
 import { PixiTextComponent } from '../pixi-text/pixi-text.component';
 import { PixiApplicationComponent } from '../pixi-application/pixi-application.component';
+import { PixiGraphics } from '../pixi-graphics/pixi-graphics';
 
 /**
  * inherits PIXI.Container
@@ -57,6 +58,11 @@ export class PixiContainerComponent extends PIXI.Container implements AfterConte
      */
     @ContentChildren(PixiTextComponent) texts: QueryList<PixiTextComponent>;
 
+    /**
+     * refers to content children of PixiGraphics in PixiContainerComponent
+     */
+    @ContentChildren(PixiGraphics) graphicslist: QueryList<PixiGraphics>;
+    
     constructor() {
         super();
     }
@@ -72,6 +78,9 @@ export class PixiContainerComponent extends PIXI.Container implements AfterConte
         });
         this.texts.forEach(text => {
             this.addChild(text);
+        });
+        this.graphicslist.forEach(graphics => {
+            this.addChild(graphics);
         });
     }
 }
