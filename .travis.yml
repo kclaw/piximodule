@@ -6,7 +6,7 @@ addons:
   chrome: stable
 before_install:
   - google-chrome-stable --headless --disbale-gpu --remote-debugging-port=9222 http://localhost &
-before_script:
-  - npm install -g @angular/cli
-  - ng build
-script: ng test --single-run
+install:
+  - npm install
+script: 
+  - npm test
