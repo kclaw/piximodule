@@ -16,7 +16,7 @@
     "clear-docs": "[ -e docs ] && rm -r ./docs || true",
     "clear-all": "npm run clear-typedoc && npm run clear-docs && npm run clear-docs",
     "build": "npm run clear-all && npm run prettier && npm run compodoc && npm run typedoc && npm run packagr && ng build --prod",
-    "test": "ng test",
+    "test": "ng test --single-run",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
