@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterContentInit, ContentChildren, QueryList } from '@angular/core';
+import { Component, OnInit, AfterContentInit, ContentChildren, QueryList, forwardRef } from '@angular/core';
 import { PixiGraphicsComponent } from '../pixi-graphics/pixi-graphics.component';
 import { PixiGraphicsWrapper } from './pixi-graphicswrapper';
 import { PixiGraphics } from '../pixi-graphics/pixi-graphics';
@@ -8,7 +8,8 @@ import { PixiGraphics } from '../pixi-graphics/pixi-graphics';
 @Component({
     selector: 'pixi-graphicswrapper',
     templateUrl: './pixi-graphicswrapper.component.html',
-    styleUrls: ['./pixi-graphicswrapper.component.css']
+    styleUrls: ['./pixi-graphicswrapper.component.css'],
+    providers: [{provide: PixiGraphicsWrapper, useExisting: forwardRef(() => PixiGraphicsWrapperComponent)}]
 })
 export class PixiGraphicsWrapperComponent implements OnInit, AfterContentInit, PixiGraphicsWrapper {
 

@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, forwardRef } from '@angular/core';
+import { PixiSprite } from '../pixi-sprite/pixi-sprite';
 import 'pixi.js';
 
 /**
@@ -36,18 +37,17 @@ import 'pixi.js';
         'transform',
         'visible',
         'width'
-    ]
+    ],
+    providers: [{provide: PixiSprite, useExisting: forwardRef(() => PixiSpriteComponent)}]
 })
-export class PixiSpriteComponent extends PIXI.Sprite implements OnInit {
+export class PixiSpriteComponent extends PixiSprite implements OnInit {
     /**
      * input for url of image, and
      * is presented to replace function of static fromImage method
      */
     @Input() fromImageUrl: string;
 
-    constructor() {
-        super();
-    }
+    constructor() { super(); }
 
     ngOnInit() {
         if (null != this.fromImageUrl) this.texture = PIXI.Texture.fromImage(this.fromImageUrl);

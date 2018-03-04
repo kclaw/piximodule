@@ -6,6 +6,8 @@ import { PixiContainerComponent } from '../pixi-container/pixi-container.compone
 import { PixiGraphicsWrapperComponent } from '../pixi-graphicswrapper/pixi-graphicswrapper.component';
 import { PixiSpriteComponent } from '../pixi-sprite/pixi-sprite.component';
 import { PixiTextComponent } from '../pixi-text/pixi-text.component';
+import { PixiGraphics } from '../pixi-graphics/pixi-graphics';
+
 
 describe('PixiApplicationComponent', () => {
     let component: PixiApplicationComponent;
@@ -28,7 +30,9 @@ describe('PixiApplicationComponent', () => {
         component.graphicswrappers = new QueryList<PixiGraphicsWrapperComponent>();
         component.sprites = new QueryList<PixiSpriteComponent>();
         component.texts = new QueryList<PixiTextComponent>();
-        fixture.detectChanges();
+        component.graphicswrappers = new QueryList<PixiGraphicsWrapperComponent>();
+        component.graphicslist = new QueryList<PixiGraphics>();
+
     });
 
     it('should create', () => {
@@ -36,6 +40,7 @@ describe('PixiApplicationComponent', () => {
     });
 
     it('should have an application after init', () => {
+        component.ngOnInit();
         expect(component.application).toBeTruthy();
     });
 });

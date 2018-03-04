@@ -1,4 +1,5 @@
 import { Component, OnInit, forwardRef } from '@angular/core';
+import { PixiGraphicsWrapper } from '../../pixi-graphicswrapper/pixi-graphicswrapper';
 import { PixiGraphicsWrapperComponent } from '../../pixi-graphicswrapper/pixi-graphicswrapper.component';
 
 @Component({
@@ -7,7 +8,7 @@ import { PixiGraphicsWrapperComponent } from '../../pixi-graphicswrapper/pixi-gr
     styleUrls: ['./example-graphicswrapper.component.css'],
     providers: [
         {
-            provide: PixiGraphicsWrapperComponent,
+            provide: PixiGraphicsWrapper,
             useExisting: forwardRef(() => ExampleGraphicswrapperComponent)
         }
     ]

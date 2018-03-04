@@ -1,17 +1,18 @@
-import { PixiGraphics } from "../pixi-graphics/pixi-graphics";
+import { IPixiGraphics } from "../pixi-graphics/pixi-graphics";
 
-export interface PixiGraphicsWrapper extends PixiGraphicsInvoker{
-    getGraphicsList(): Array<PixiGraphics>;
+export interface IPixiGraphicsWrapper extends IPixiGraphicsInvoker{
+    getGraphicsList(): Array<IPixiGraphics>;
 }
 
-export interface PixiGraphicsInvoker {
+export interface IPixiGraphicsInvoker {
     apply(name: string, graphics: PIXI.Graphics);
 }
 
-export class PixiGraphicsInvokerImpl implements PixiGraphicsInvoker {
-    
-    apply(name: string, graphics: PIXI.Graphics) {
-        console.log('called');
-    }
+export class PixiGraphicsInvoker implements IPixiGraphicsInvoker {
+    apply(name: string, graphics: PIXI.Graphics){};
+}
 
+export abstract class PixiGraphicsWrapper implements IPixiGraphicsWrapper {
+    abstract getGraphicsList(): IPixiGraphics[];
+    abstract apply(name: string, graphics: PIXI.Graphics);
 }

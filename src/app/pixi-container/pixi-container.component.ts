@@ -1,10 +1,14 @@
-import { Component, OnInit, ContentChildren, QueryList, AfterContentInit } from '@angular/core';
+import { Component, OnInit, ContentChildren, QueryList, AfterContentInit, forwardRef } from '@angular/core';
 import 'pixi.js';
 import { PixiSpriteComponent } from '../pixi-sprite/pixi-sprite.component';
 import { PixiGraphicsWrapperComponent } from '../pixi-graphicswrapper/pixi-graphicswrapper.component';
 import { PixiTextComponent } from '../pixi-text/pixi-text.component';
 import { PixiApplicationComponent } from '../pixi-application/pixi-application.component';
 import { PixiGraphics } from '../pixi-graphics/pixi-graphics';
+import { PixiContainer } from './pixi-container';
+import { PixiSprite } from '../pixi-sprite/pixi-sprite';
+import { PixiGraphicsWrapper } from '../pixi-graphicswrapper/pixi-graphicswrapper';
+import { PixiText } from '../pixi-text/pixi-text';
 
 /**
  * inherits PIXI.Container
@@ -39,24 +43,25 @@ import { PixiGraphics } from '../pixi-graphics/pixi-graphics';
         'transform',
         'visible',
         'width'
-    ]
+    ],
+    providers: [{provide: PixiContainer, useExisting: forwardRef(() => PixiContainerComponent)}]
 })
-export class PixiContainerComponent extends PIXI.Container implements AfterContentInit {
+export class PixiContainerComponent extends PixiContainer implements AfterContentInit {
     /**
      * refers to content children of PixiSpriteComponent in PixiContainerComponent
      */
-    @ContentChildren(PixiSpriteComponent) sprites: QueryList<PixiSpriteComponent>;
+    @ContentChildren(PixiSprite) sprites: QueryList<PixiSpriteComponent>;
 
     /**
      * refers to content children of PixiGraphicsWrapperComponent in PixiContainerComponent
      */
-    @ContentChildren(PixiGraphicsWrapperComponent)
+    @ContentChildren(PixiGraphicsWrapper)
     graphicswrappers: QueryList<PixiGraphicsWrapperComponent>;
 
     /**
      * refers to content children of PixiTextComponent in PixiContainerComponent
      */
-    @ContentChildren(PixiTextComponent) texts: QueryList<PixiTextComponent>;
+    @ContentChildren(PixiText) texts: QueryList<PixiTextComponent>;
 
     /**
      * refers to content children of PixiGraphics in PixiContainerComponent
@@ -68,6 +73,10 @@ export class PixiContainerComponent extends PIXI.Container implements AfterConte
     }
 
     ngAfterContentInit(): void {
+        this.layout();
+    }
+
+    layout() {
         this.sprites.forEach(sprite => {
             this.addChild(sprite);
         });

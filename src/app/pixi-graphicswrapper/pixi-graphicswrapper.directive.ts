@@ -1,16 +1,16 @@
 import { Directive, OnInit, Input, AfterContentInit, ContentChildren, QueryList } from '@angular/core';
-import { PixiGraphicsWrapper, PixiGraphicsInvoker } from './pixi-graphicswrapper';
+import { IPixiGraphicsWrapper, IPixiGraphicsInvoker } from './pixi-graphicswrapper';
 import { PixiGraphics } from '../pixi-graphics/pixi-graphics';
 
 @Directive({
     selector: '[pixi-graphicswrapper]'
 })
-export class PixiGraphicsWrapperDirective implements PixiGraphicsWrapper {
+export class PixiGraphicsWrapperDirective implements IPixiGraphicsWrapper {
 
     /**
      * refers to graphicswrapper from input
      */
-    @Input('pixi-graphicswrapper') graphicsinvoker: PixiGraphicsInvoker;
+    @Input('pixi-graphicswrapper') graphicsinvoker: IPixiGraphicsInvoker;
 
     @ContentChildren(PixiGraphics) pixigraphics: QueryList<PixiGraphics>;
 

@@ -39,15 +39,16 @@ describe('PixiInitializerComponent', () => {
     });
 
     it('should initialise pixi application in dom after initialiseApplication calling', () => {
-        component.initializeApplication();
-        fixture.detectChanges();
+        component.initialize();
+        //fixture.detectChanges();
         let de: DebugElement = fixture.debugElement.query(By.css('pixi-application'));
+        console.log(de);
         expect(de).toBeTruthy();
     });
 
     it('should create pixi layer in dom', () => {
-        component.initializeApplication();
-        fixture.detectChanges();
+        component.initialize();
+        //fixture.detectChanges();
         let de: DebugElement = fixture.debugElement.query(By.css('pixi-layer'));
         expect(de).toBeTruthy();
     });

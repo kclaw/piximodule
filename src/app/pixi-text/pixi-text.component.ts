@@ -1,5 +1,5 @@
-import { Component, Input } from '@angular/core';
-
+import { Component, Input, forwardRef } from '@angular/core';
+import { PixiText } from '../pixi-text/pixi-text';
 /**
  * inherits PIXI.Text
  */
@@ -37,9 +37,10 @@ import { Component, Input } from '@angular/core';
         'transform',
         'visible',
         'width'
-    ]
+    ],
+    providers: [{provide: PixiText, useExisting: forwardRef(() => PixiTextComponent)}]
 })
-export class PixiTextComponent extends PIXI.Text {
+export class PixiTextComponent extends PixiText {
     constructor() {
         super();
     }

@@ -286,11 +286,11 @@ In usual case, angular cli helps to generate those Component related files
 ## 1.0.0-beta.2 
 - [x] introduces Angular Directive coexists with Angular Component class inheritance
     - [x] PixiInitializerComponent
-    - [ ] PixiGraphicsWrapperComponent
+    - [x] PixiGraphicsWrapperComponent
 - [ ] introduces Responsive on pixi application
-- [ ] introduces interface on component
+- [ ] introduces typescript interface
 - [ ] improves/enriches examples/use cases
-- [ ] jot down more notes on components
+- [ ] jot down more notes on selected class
     - [ ] PixiApplicationComponent
     - [ ] PixiInitializerComponent
     - [ ] PixiGraphicsWrapperComponent

@@ -5,7 +5,8 @@ import {
     AfterContentInit,
     ElementRef,
     ContentChildren,
-    QueryList
+    QueryList,
+    forwardRef
 } from '@angular/core';
 import 'pixi.js';
 import { PixiSpriteComponent } from '../pixi-sprite/pixi-sprite.component';
@@ -13,6 +14,11 @@ import { PixiContainerComponent } from '../pixi-container/pixi-container.compone
 import { PixiTextComponent } from '../pixi-text/pixi-text.component';
 import { PixiGraphicsWrapperComponent } from '../pixi-graphicswrapper/pixi-graphicswrapper.component';
 import { PixiGraphics } from '../pixi-graphics/pixi-graphics';
+import { PixiApplication } from './pixi-application';
+import { PixiGraphicsWrapper } from '../pixi-graphicswrapper/pixi-graphicswrapper';
+import { PixiContainer } from '../pixi-container/pixi-container';
+import { PixiText } from '../pixi-text/pixi-text';
+import { PixiSprite } from '../pixi-sprite/pixi-sprite';
 
 /**
  * have reference and delegation of PIXI.Application
@@ -21,9 +27,11 @@ import { PixiGraphics } from '../pixi-graphics/pixi-graphics';
 @Component({
     selector: 'pixi-application',
     templateUrl: './pixi-application.component.html',
-    styleUrls: ['./pixi-application.component.css']
+    styleUrls: ['./pixi-application.component.css'],
+    providers: [{provide: PixiApplication, useExisting: forwardRef(() => PixiApplicationComponent)}]
 })
-export class PixiApplicationComponent implements OnInit {
+export class PixiApplicationComponent extends PixiApplication implements OnInit {
+ 
     /**
      * refers to width of PIXI.Application
      */
@@ -47,29 +55,29 @@ export class PixiApplicationComponent implements OnInit {
     /**
      * refers to PixiSpriteComponent going to be registered in PIXI.Application
      */
-    sprites: QueryList<PixiSpriteComponent>;
+    sprites: QueryList<PixiSprite>;
 
     /**
      * refers to PixiTextComponent going to be registered in PIXI.Application
      */
-    texts: QueryList<PixiTextComponent>;
+    texts: QueryList<PixiText>;
 
     /**
      * refers to PixiContainerComponent going to be registered in PIXI.Application
      */
-    containers: QueryList<PixiContainerComponent>;
+    containers: QueryList<PixiContainer>;
 
     /**
      * refers to PixiGraphicsWrapper going to be registered in PIXI.Application
      */
-    graphicswrappers: QueryList<PixiGraphicsWrapperComponent>;
+    graphicswrappers: QueryList<PixiGraphicsWrapper>;
 
     /**
      * refers to PixiGraphicsComponent going to be registered in PIXI.Application
      */
     graphicslist: QueryList<PixiGraphics>;
 
-    constructor(public vcr: ViewContainerRef) {}
+    constructor(private vcr: ViewContainerRef) { super(); }
 
     ngOnInit() {
         this.application = new PIXI.Application(this.width, this.height, this.options);
@@ -84,13 +92,20 @@ export class PixiApplicationComponent implements OnInit {
         this.texts.forEach(text => {
             this.application.stage.addChild(text);
         });
-        this.graphicswrappers.forEach(wrapper => {
-            wrapper.graphicslist.forEach(graphics => {
-                this.application.stage.addChild(graphics);
+        this.graphicswrappers.forEach(wrapper => {console.log('hi');
+            wrapper.getGraphicsList().forEach(graphics => {
+                console.log(<PIXI.Graphics>graphics);
+                this.application.stage.addChild(<PIXI.Graphics>graphics);
             });
         });
         this.graphicslist.forEach(graphics => {
             this.application.stage.addChild(graphics);
         });
+    }
+
+    layout() {}
+
+    getViewContainerRef(): ViewContainerRef {
+        return this.vcr;
     }
 }

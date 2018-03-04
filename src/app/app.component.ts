@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PixiGraphicsWrapper, PixiGraphicsInvoker, PixiGraphicsInvokerImpl } from './pixi-graphicswrapper/pixi-graphicswrapper';
+import { PixiGraphicsWrapper, IPixiGraphicsInvoker, PixiGraphicsInvoker } from './pixi-graphicswrapper/pixi-graphicswrapper';
 
 @Component({
     selector: 'app-root',
@@ -22,7 +22,7 @@ export class AppComponent implements OnInit {
     }
 
     graphics(): PixiGraphicsInvoker {
-        PixiGraphicsInvokerImpl.prototype.apply = (name: string, graphics: PIXI.Graphics) => {
+        PixiGraphicsInvoker.prototype.apply = (name: string, graphics: PIXI.Graphics) => {
             if (name == 'hi2') {
                 graphics.beginFill(0xff3300);
                 graphics.lineStyle(4, 0xffd900, 1);
@@ -63,7 +63,7 @@ export class AppComponent implements OnInit {
                 graphics.endFill();
             }
         };
-        return new PixiGraphicsInvokerImpl();
+        return new PixiGraphicsInvoker();
     }
 
 }
