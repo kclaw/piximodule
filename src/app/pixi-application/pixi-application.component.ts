@@ -83,6 +83,10 @@ export class PixiApplicationComponent extends PixiApplication implements OnInit 
         this.application = new PIXI.Application(this.width, this.height, this.options);
         this.vcr.element.nativeElement.appendChild(this.application.view);
         this.vcr.element.nativeElement.style = 'position:absolute;';
+        this.layout();
+    }
+
+    layout() {
         this.containers.forEach(container => {
             this.application.stage.addChild(container);
         });
@@ -92,9 +96,8 @@ export class PixiApplicationComponent extends PixiApplication implements OnInit 
         this.texts.forEach(text => {
             this.application.stage.addChild(text);
         });
-        this.graphicswrappers.forEach(wrapper => {console.log('hi');
+        this.graphicswrappers.forEach(wrapper => {
             wrapper.getGraphicsList().forEach(graphics => {
-                console.log(<PIXI.Graphics>graphics);
                 this.application.stage.addChild(<PIXI.Graphics>graphics);
             });
         });
@@ -102,8 +105,6 @@ export class PixiApplicationComponent extends PixiApplication implements OnInit 
             this.application.stage.addChild(graphics);
         });
     }
-
-    layout() {}
 
     getViewContainerRef(): ViewContainerRef {
         return this.vcr;
